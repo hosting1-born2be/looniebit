@@ -2,6 +2,16 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import {
+  FACEBOOK_URL,
+  INSTAGRAM_URL,
+  WEBSITE_EMAIL,
+  WEBSITE_OFFICE_ADDRESS,
+  WEBSITE_PHONE,
+  WEBSITE_REGISTRATION_ADDRESS,
+  YOUTUBE_URL,
+} from "@/shared/lib/constants/constants";
+
 import Facebook from "../../icons/socials/Facebook";
 import Instagram from "../../icons/socials/Instagram";
 import Youtube from "../../icons/socials/Youtube";
@@ -18,15 +28,15 @@ export default function Footer() {
           <div className={styles.footerContentWrapperItem}>
             <h3>Stay Social</h3>
             <nav>
-              <Link href={"#"}>
+              <Link href={YOUTUBE_URL}>
                 <Youtube />
                 YouTube
               </Link>
-              <Link href={"#"}>
+              <Link href={FACEBOOK_URL}>
                 <Facebook />
                 Facebook
               </Link>
-              <Link href={"#"}>
+              <Link href={INSTAGRAM_URL}>
                 <Instagram />
                 Instagram
               </Link>
@@ -39,14 +49,16 @@ export default function Footer() {
               <Link href="/company">Company</Link>
               <Link href="#">User Guide</Link>
               <Link href="#">Support Center</Link>
-              <Link href="#">Insights</Link>
+              <Link href="/insights">Insights</Link>
               <Link href="#">Contacts</Link>
             </nav>
           </div>
           <div className={styles.footerContentWrapperItem}>
             <h3>Guidelines</h3>
             <nav>
-              <Link href="#">Terms and Conditions</Link>
+              <Link href="/legal/terms-and-conditions">
+                Terms and Conditions
+              </Link>
               <Link href="#">Privacy Policy</Link>
               <Link href="#">Cookie Policy</Link>
               <Link href="#">Refund Policy</Link>
@@ -60,14 +72,14 @@ export default function Footer() {
             <div className={styles.address}>
               <div>
                 <span>Office addresses:</span>
-                <p>Adresses example 74A </p>
+                <p>{WEBSITE_OFFICE_ADDRESS}</p>
               </div>
               <div>
                 <span>Registered addresses:</span>
-                <p>Adresses example 92B </p>
+                <p>{WEBSITE_REGISTRATION_ADDRESS}</p>
               </div>
-              <Link href="#">example@gmail.com</Link>
-              <Link href="#">+1 000 000 000</Link>
+              <Link href={`mailto:${WEBSITE_EMAIL}`}>{WEBSITE_EMAIL}</Link>
+              <Link href={`tel:${WEBSITE_PHONE}`}>{WEBSITE_PHONE}</Link>
             </div>
           </div>
         </div>

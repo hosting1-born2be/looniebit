@@ -1,0 +1,11 @@
+.featuredInsights {
+  display: flex;
+  margin-top: 48px;
+  > div {
+    width: 33.33%;
+    flex-grow: 1;
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+}

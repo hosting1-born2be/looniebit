@@ -3,6 +3,14 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
+import {
+  FACEBOOK_URL,
+  INSTAGRAM_URL,
+  WEBSITE_EMAIL,
+  WEBSITE_PHONE,
+  YOUTUBE_URL,
+} from "@/shared/lib/constants/constants";
+
 import Burger from "../../icons/burger/burger";
 import Facebook from "../../icons/socials/Facebook";
 import Instagram from "../../icons/socials/Instagram";
@@ -21,17 +29,17 @@ export default function Header() {
       <header className={styles.header}>
         <div className={styles.headerTop}>
           <div className={styles.headerTopLeft}>
-            <Link href="#">example@gmail.com</Link>
-            <Link href="#">+1 000 000 000</Link>
+            <Link href={`mailto:${WEBSITE_EMAIL}`}>{WEBSITE_EMAIL}</Link>
+            <Link href={`tel:${WEBSITE_PHONE}`}>{WEBSITE_PHONE}</Link>
           </div>
           <div className={styles.headerTopSocials}>
-            <Link href="#">
+            <Link href={YOUTUBE_URL} target="_blank">
               <Youtube />
             </Link>
-            <Link href="#">
+            <Link href={FACEBOOK_URL} target="_blank">
               <Facebook />
             </Link>
-            <Link href="#">
+            <Link href={INSTAGRAM_URL} target="_blank">
               <Instagram />
             </Link>
           </div>
@@ -48,7 +56,7 @@ export default function Header() {
             <Link href="/company">Company</Link>
             <Link href="#">User Guide</Link>
             <Link href="#">Support Center</Link>
-            <Link href="#">Insights</Link>
+            <Link href="/insights">Insights</Link>
             <Link href="#">Contacts</Link>
           </nav>
           <div className={styles.headerMainButtons}>
@@ -71,17 +79,17 @@ export default function Header() {
           <Link href="/company">Company</Link>
           <Link href="#">User Guide</Link>
           <Link href="#">Support Center</Link>
-          <Link href="#">Insights</Link>
+          <Link href="/insights">Insights</Link>
           <Link href="#">Contacts</Link>
         </nav>
         <div className={styles.socials}>
-          <Link href="#">
+          <Link href={YOUTUBE_URL} target="_blank">
             <Youtube />
           </Link>
-          <Link href="#">
+          <Link href={FACEBOOK_URL} target="_blank">
             <Facebook />
           </Link>
-          <Link href="#">
+          <Link href={INSTAGRAM_URL} target="_blank">
             <Instagram />
           </Link>
         </div>

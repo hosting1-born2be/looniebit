@@ -1,0 +1,103 @@
+.insightsHero {
+  background-image: url("/images/home/heroBack.svg");
+  background-position: center;
+  padding: 165px 0;
+  position: relative;
+  @media (max-width: 992px) {
+    padding: 65px 0;
+  }
+
+  .insightsHeroContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    z-index: 2;
+
+    .label {
+      display: flex;
+      padding: 12px 24px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 8px;
+      background: #1b1b1b;
+      .labelIcon {
+        display: flex;
+        width: 12px;
+        height: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        span {
+          &:first-child {
+            width: 12px;
+            height: 12px;
+            background: rgba(114, 255, 177, 0.15);
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: scale(0.5);
+            animation: pulse 2s infinite;
+          }
+          &:last-child {
+            width: 6px;
+            height: 6px;
+            background: #72ffb1;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+          }
+        }
+      }
+      > span {
+        color: #fff;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    h1 {
+      color: #fff;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 12px;
+      text-align: center;
+      @media (max-width: 992px) {
+        font-size: 32px;
+      }
+    }
+    p {
+      color: #b7b7b7;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 36px;
+      text-align: center;
+      max-width: 750px;
+      @media (max-width: 992px) {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}

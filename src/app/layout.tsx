@@ -14,8 +14,15 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "LoonieBit",
-  description: "",
+  title: "LoonieBit | Buy, Sell & Exchange Cryptocurrency Instantly",
+  description:
+    "LoonieBit is a secure and regulated crypto exchange for fast and reliable cryptocurrency transactions. Trade Bitcoin, Ethereum, and more with full compliance and powerful tools.",
+  openGraph: {
+    title: "LoonieBit | Buy, Sell & Exchange Cryptocurrency Instantly",
+    description:
+      "LoonieBit is a secure and regulated crypto exchange for fast and reliable cryptocurrency transactions. Trade Bitcoin, Ethereum, and more with full compliance and powerful tools.",
+    //images: "",
+  },
 };
 
 export default function RootLayout({
