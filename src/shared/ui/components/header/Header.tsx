@@ -44,7 +44,7 @@ export default function Header() {
             <Image src="/images/logo.svg" alt="logo" width={100} height={24} />
           </Link>
           <nav className={styles.headerMainNav}>
-            <Link href="#">Home</Link>
+            <Link href="/">Home</Link>
             <Link href="#">Company</Link>
             <Link href="#">User Guide</Link>
             <Link href="#">Support Center</Link>
@@ -67,7 +67,7 @@ export default function Header() {
         }`}
       >
         <nav className={styles.headerMainNav}>
-          <Link href="#">Home</Link>
+          <Link href="/">Home</Link>
           <Link href="#">Company</Link>
           <Link href="#">User Guide</Link>
           <Link href="#">Support Center</Link>

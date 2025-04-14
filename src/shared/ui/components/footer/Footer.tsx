@@ -35,7 +35,7 @@ export default function Footer() {
           <div className={styles.footerContentWrapperItem}>
             <h3>Navigation</h3>
             <nav>
-              <Link href="#">Home</Link>
+              <Link href="/">Home</Link>
               <Link href="#">Company</Link>
               <Link href="#">User Guide</Link>
               <Link href="#">Support Center</Link>
