@@ -40,12 +40,10 @@ body {
   font-family: var(--font-roboto), sans-serif;
   @media (min-width: rem(1600)) {
     ._container {
-      //zoom: 1.2;
+      zoom: 1.2;
     }
   }
 }
-
-
 
 body {
   line-height: 1;
@@ -55,22 +53,24 @@ body {
   top: 0 !important;
 }
 
-html{
+html {
   &[lang="de"],
   &[lang="pl"],
-  &[lang="it"]{
-    header{
-      a, button{
-        font-size: 12px!important;
+  &[lang="it"] {
+    header {
+      a,
+      button {
+        font-size: 12px !important;
       }
-      &+div{
-        a, button{
-          font-size: 12px!important;
+      & + div {
+        a,
+        button {
+          font-size: 12px !important;
         }
       }
     }
-    .WhiteButton_whiteButton__HPh_c{
-      font-size: 14px!important;
+    .WhiteButton_whiteButton__HPh_c {
+      font-size: 14px !important;
     }
   }
 }
@@ -161,7 +161,7 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: #72FFB1;
+    background-color: #72ffb1;
     border-radius: rem(100);
   }
 }

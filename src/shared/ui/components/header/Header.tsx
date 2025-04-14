@@ -4,6 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Burger from "../../icons/burger/burger";
+import Facebook from "../../icons/socials/Facebook";
+import Instagram from "../../icons/socials/Instagram";
+import Youtube from "../../icons/socials/Youtube";
 import styles from "./header.module.scss";
 
 export default function Header() {
@@ -22,9 +25,15 @@ export default function Header() {
             <Link href="#">+1 000 000 000</Link>
           </div>
           <div className={styles.headerTopSocials}>
-            <Link href="#"></Link>
-            <Link href="#"></Link>
-            <Link href="#"></Link>
+            <Link href="#">
+              <Youtube />
+            </Link>
+            <Link href="#">
+              <Facebook />
+            </Link>
+            <Link href="#">
+              <Instagram />
+            </Link>
           </div>
         </div>
         <div className={styles.headerMain}>
@@ -65,6 +74,17 @@ export default function Header() {
           <Link href="#">Insights</Link>
           <Link href="#">Contacts</Link>
         </nav>
+        <div className={styles.socials}>
+          <Link href="#">
+            <Youtube />
+          </Link>
+          <Link href="#">
+            <Facebook />
+          </Link>
+          <Link href="#">
+            <Instagram />
+          </Link>
+        </div>
       </div>
     </>
   );

@@ -4,8 +4,8 @@ import { Roboto } from "next/font/google";
 import Footer from "@/shared/ui/components/footer/Footer";
 import Header from "@/shared/ui/components/header/Header";
 
-import "@/shared/ui/components/lib/styles/base.scss";
-import "@/shared/ui/components/lib/styles/mixin.scss";
+import "@/shared/lib/styles/base.scss";
+import "@/shared/lib/styles/mixin.scss";
 
 const roboto = Roboto({
   variable: "--font-roboto",
