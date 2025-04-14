@@ -16,12 +16,15 @@ const CRYPTO_LIST: Crypto[] = [
   { id: "cardano", symbol: "ADA" },
   { id: "ripple", symbol: "XRP" },
   { id: "polkadot", symbol: "DOT" },
-  { id: "bitcoin", symbol: "BTC" },
-  { id: "ethereum", symbol: "ETH" },
-  { id: "solana", symbol: "SOL" },
-  { id: "cardano", symbol: "ADA" },
-  { id: "ripple", symbol: "XRP" },
-  { id: "polkadot", symbol: "DOT" },
+  { id: "dogecoin", symbol: "DOGE" },
+  { id: "avalanche-2", symbol: "AVAX" },
+  { id: "chainlink", symbol: "LINK" },
+  { id: "polygon", symbol: "MATIC" },
+  { id: "shiba-inu", symbol: "SHIB" },
+  { id: "litecoin", symbol: "LTC" },
+  { id: "uniswap", symbol: "UNI" },
+  { id: "monero", symbol: "XMR" },
+  { id: "stellar", symbol: "XLM" }
 ];
 
 type PriceDetails = {
