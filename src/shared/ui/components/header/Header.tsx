@@ -15,7 +15,9 @@ import Burger from "../../icons/burger/burger";
 import Facebook from "../../icons/socials/Facebook";
 import Instagram from "../../icons/socials/Instagram";
 import Youtube from "../../icons/socials/Youtube";
+import CryptoTicker from "../cryptoTicker/cryptoTicker";
 import styles from "./header.module.scss";
+
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -69,6 +71,7 @@ export default function Header() {
           </div>
         </div>
       </header>
+      <CryptoTicker />
       <div
         className={`${styles.mobileMenu} ${
           isMobileMenuOpen ? styles.active : ""
