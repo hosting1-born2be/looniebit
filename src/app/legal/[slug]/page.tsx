@@ -4,12 +4,14 @@ import styles from "./page.module.scss";
 import { getPolicy } from "@/features/policy/get-policy";
 import { renderContent } from "@/features/renderContent/renderContent";
 
-type Props = {
-  params: { slug: string };
-};
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const policy = await getPolicy({ slug: params.slug });
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const awaitedParams = await params;
+  const { slug } = awaitedParams;
+  const policy = await getPolicy({ slug });
 
   if (!policy) {
     return {
@@ -26,8 +28,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function PolicyPage({ params }: Props) {
-  const slug = params.slug;
+export default async function LegalPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const awaitedParams = await params;
+  const { slug } = awaitedParams;
   const policy = await getPolicy({ slug });
 
   const date = new Date(policy?.last_updated || "");

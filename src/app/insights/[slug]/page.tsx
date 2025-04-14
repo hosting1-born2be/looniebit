@@ -6,12 +6,14 @@ import styles from "./page.module.scss";
 import { getInsight } from "@/features/insights/get-insight";
 import { renderContent } from "@/features/renderContent/renderContent";
 
-type Props = {
-  params: { slug: string };
-};
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const insight = await getInsight({ slug: params.slug });
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const awaitedParams = await params;
+  const { slug } = awaitedParams;
+  const insight = await getInsight({ slug });
 
   if (!insight) {
     return {
@@ -31,8 +33,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default async function InsightPage({ params }: Props) {
-  const slug = params.slug;
+export default async function InsightPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const awaitedParams = await params;
+  const { slug } = awaitedParams;
   const insight = await getInsight({ slug });
 
   if (!insight) {
