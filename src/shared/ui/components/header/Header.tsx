@@ -45,7 +45,7 @@ export default function Header() {
           </Link>
           <nav className={styles.headerMainNav}>
             <Link href="/">Home</Link>
-            <Link href="#">Company</Link>
+            <Link href="/company">Company</Link>
             <Link href="#">User Guide</Link>
             <Link href="#">Support Center</Link>
             <Link href="#">Insights</Link>
@@ -68,7 +68,7 @@ export default function Header() {
       >
         <nav className={styles.headerMainNav}>
           <Link href="/">Home</Link>
-          <Link href="#">Company</Link>
+          <Link href="/company">Company</Link>
           <Link href="#">User Guide</Link>
           <Link href="#">Support Center</Link>
           <Link href="#">Insights</Link>

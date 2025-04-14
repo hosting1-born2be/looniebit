@@ -1,0 +1,224 @@
+.companyDifferent {
+  padding: 165px 0;
+  position: relative;
+  background-image: url("/images/company/gradientDifferent.svg");
+  background-position: bottom center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-top: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+  @media (max-width: 992px) {
+    padding: 65px 0;
+    background-image: url("/images/company/gradientDifferentMob.svg");
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/home/pattern2.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    @media (max-width: 992px) {
+      opacity: 0.5;
+    }
+  }
+  .companyDifferentContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    gap: 48px;
+    .companyDifferentContentTop {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 24px;
+      h2 {
+        color: #fff;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+        @media (max-width: 992px) {
+          font-size: 24px;
+        }
+      }
+      p {
+        color: #b7b7b7;
+        text-align: center;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+        max-width: 750px;
+        @media (max-width: 992px) {
+          max-width: 100%;
+        }
+      }
+    }
+    .companyDifferentContentRow {
+      display: flex;
+      border: 1px solid #242424;
+      flex-wrap: wrap;
+      @media (max-width: 992px) {
+        flex-direction: column;
+      }
+      > div {
+        width: 50%;
+        flex-grow: 1;
+        padding: 24px;
+        @media (max-width: 992px) {
+          width: 100%;
+        }
+        &:first-child {
+          border-right: 1px dashed #242424;
+          border-bottom: 1px solid #242424;
+          @media (max-width: 992px) {
+            border-right: none;
+            border-bottom: 1px dashed #242424;
+          }
+        }
+        &:nth-child(2) {
+          border-right: 1px dashed #242424;
+          border-bottom: 1px solid #242424;
+          @media (max-width: 992px) {
+            border-right: none;
+            border-bottom: 1px dashed #242424;
+          }
+        }
+        &:nth-child(3) {
+          border-right: 1px dashed #242424;
+          border-bottom: 1px solid #242424;
+          @media (max-width: 992px) {
+            border-right: none;
+            border-bottom: 1px dashed #242424;
+          }
+        }
+        &:nth-child(4) {
+          border-bottom: 1px solid #242424;
+          @media (max-width: 992px) {
+            border-bottom: 1px dashed #242424;
+          }
+        }
+        &:nth-child(5) {
+          border-right: 1px dashed #242424;
+          @media (max-width: 992px) {
+            border-right: none;
+            border-bottom: 1px dashed #242424;
+          }
+        }
+
+        &:last-child {
+          background-image: url("/images/company/different.png");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media (max-width: 992px) {
+            padding: 114px 0;
+          }
+        }
+
+        > div {
+          span {
+            color: #72ffb1;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          h3 {
+            color: #fff;
+            margin: 24px 0 12px 0;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+          p {
+            color: #b7b7b7;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+    }
+    .readyToStart {
+      display: flex;
+      width: 100%;
+      border: 1px solid #242424;
+      margin-top: 48px;
+      @media (max-width: 992px) {
+        flex-direction: column;
+      }
+      .readyToStartContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        width: 50%;
+        padding: 24px;
+        background: #161616;
+        @media (max-width: 992px) {
+          width: 100%;
+          align-items: center;
+        }
+        > div {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 12px;
+          @media (max-width: 992px) {
+            align-items: center;
+          }
+          h3 {
+            color: #fff;
+            font-size: 38px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            @media (max-width: 992px) {
+              font-size: 24px;
+              text-align: center;
+            }
+          }
+          p {
+            color: #b7b7b7;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            @media (max-width: 992px) {
+              text-align: center;
+            }
+          }
+        }
+      }
+      .readyToStartImage {
+        width: 50%;
+        background-image: url("/images/home/journeyStart.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 300px;
+        @media (max-width: 992px) {
+          height: 230px;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

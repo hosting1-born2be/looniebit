@@ -36,7 +36,7 @@ export default function Footer() {
             <h3>Navigation</h3>
             <nav>
               <Link href="/">Home</Link>
-              <Link href="#">Company</Link>
+              <Link href="/company">Company</Link>
               <Link href="#">User Guide</Link>
               <Link href="#">Support Center</Link>
               <Link href="#">Insights</Link>

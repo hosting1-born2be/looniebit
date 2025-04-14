@@ -1,0 +1,92 @@
+.сompanyStarted {
+  padding: 165px 0;
+  position: relative;
+  border-top: 1px solid #242424;
+  background: #101010;
+  @media (max-width: 992px) {
+    padding: 65px 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/home/pattern2.svg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    @media (max-width: 992px) {
+      opacity: 0.5;
+    }
+  }
+  .readyToStart {
+    display: flex;
+    width: 100%;
+    border: 1px solid #242424;
+    margin-top: 48px;
+    position: relative;
+    z-index: 2;
+    @media (max-width: 992px) {
+      flex-direction: column;
+    }
+    .readyToStartContent {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 24px;
+      width: 50%;
+      padding: 24px;
+      background: #161616;
+      @media (max-width: 992px) {
+        width: 100%;
+        align-items: center;
+      }
+      > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        @media (max-width: 992px) {
+          align-items: center;
+        }
+        h3 {
+          color: #fff;
+          font-size: 38px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          @media (max-width: 992px) {
+            font-size: 24px;
+            text-align: center;
+          }
+        }
+        p {
+          color: #b7b7b7;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          @media (max-width: 992px) {
+            text-align: center;
+          }
+        }
+      }
+    }
+    .readyToStartImage {
+      width: 50%;
+      background-image: url("/images/company/getStarted.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 300px;
+      @media (max-width: 992px) {
+        height: 230px;
+        width: 100%;
+      }
+    }
+  }
+}
