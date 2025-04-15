@@ -44,7 +44,7 @@ export default function Footer() {
             <nav>
               <Link href="/">Home</Link>
               <Link href="/company">Company</Link>
-              <Link href="#">User Guide</Link>
+              <Link href="/user-guide">User Guide</Link>
               <Link href="/support-center">Support Center</Link>
               <Link href="/insights">Insights</Link>
               <Link href="/contacts">Contacts</Link>
@@ -61,7 +61,9 @@ export default function Footer() {
               <Link href="/legal/refund-policy">Refund Policy</Link>
               <Link href="/legal/disclaimer">Disclaimer</Link>
               <Link href="/legal/aml-policy">AML Policy</Link>
-              <Link href="/legal/complaints-procedure">Complaints Procedure</Link>
+              <Link href="/legal/complaints-procedure">
+                Complaints Procedure
+              </Link>
             </nav>
           </div>
           <div className={styles.footerContentWrapperItem}>

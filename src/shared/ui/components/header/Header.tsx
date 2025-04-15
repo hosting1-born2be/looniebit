@@ -8,6 +8,7 @@ import {
   INSTAGRAM_URL,
   WEBSITE_EMAIL,
   WEBSITE_PHONE,
+  WEBSITE_PHONE_2,
   YOUTUBE_URL,
 } from "@/shared/lib/constants/constants";
 
@@ -39,7 +40,10 @@ export default function Header() {
         <div className={styles.headerTop}>
           <div className={styles.headerTopLeft}>
             <Link href={`mailto:${WEBSITE_EMAIL}`}>{WEBSITE_EMAIL}</Link>
-            <Link href={`tel:${WEBSITE_PHONE}`}>{WEBSITE_PHONE}</Link>
+            <div className={styles.headerTopPhone}>
+              <Link href={`tel:${WEBSITE_PHONE}`}>{WEBSITE_PHONE}</Link>
+              <Link href={`tel:${WEBSITE_PHONE_2}`}>{WEBSITE_PHONE_2}</Link>
+            </div>
           </div>
           <div className={styles.headerTopSocials}>
             <Link href={YOUTUBE_URL} target="_blank">
@@ -63,7 +67,7 @@ export default function Header() {
           <nav className={styles.headerMainNav}>
             <Link href="/">Home</Link>
             <Link href="/company">Company</Link>
-            <Link href="#">User Guide</Link>
+            <Link href="/user-guide">User Guide</Link>
             <Link href="/support-center">Support Center</Link>
             <Link href="/insights">Insights</Link>
             <Link href="/contacts">Contacts</Link>
@@ -87,8 +91,8 @@ export default function Header() {
         <nav className={styles.headerMainNav}>
           <Link href="/">Home</Link>
           <Link href="/company">Company</Link>
-          <Link href="#">User Guide</Link>
-          <Link href="#">Support Center</Link>
+          <Link href="/user-guide">User Guide</Link>
+          <Link href="/support-center">Support Center</Link>
           <Link href="/insights">Insights</Link>
           <Link href="/contacts">Contacts</Link>
         </nav>
