@@ -6,9 +6,6 @@ import {
   FACEBOOK_URL,
   INSTAGRAM_URL,
   WEBSITE_EMAIL,
-  WEBSITE_OFFICE_ADDRESS,
-  WEBSITE_PHONE,
-  WEBSITE_REGISTRATION_ADDRESS,
   YOUTUBE_URL,
 } from "@/shared/lib/constants/constants";
 
@@ -70,16 +67,7 @@ export default function Footer() {
           <div className={styles.footerContentWrapperItem}>
             <h3>Reach Out to Us</h3>
             <div className={styles.address}>
-              <div>
-                <span>Office addresses:</span>
-                <p>{WEBSITE_OFFICE_ADDRESS}</p>
-              </div>
-              <div>
-                <span>Registered addresses:</span>
-                <p>{WEBSITE_REGISTRATION_ADDRESS}</p>
-              </div>
               <Link href={`mailto:${WEBSITE_EMAIL}`}>{WEBSITE_EMAIL}</Link>
-              <Link href={`tel:${WEBSITE_PHONE}`}>{WEBSITE_PHONE}</Link>
             </div>
           </div>
         </div>
