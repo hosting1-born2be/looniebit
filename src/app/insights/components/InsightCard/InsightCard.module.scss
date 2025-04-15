@@ -3,9 +3,12 @@
   flex-direction: column;
   gap: 76px;
   border: 1px solid #242424;
-  background: #161616;
+  background: #101010;
   height: 100%;
   justify-content: space-between;
+  &:hover {
+    background: #161616;
+  }
   a {
     display: flex;
     &:last-child {
