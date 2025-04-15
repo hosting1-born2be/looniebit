@@ -150,7 +150,7 @@ export default function HomeJourney() {
               </motion.div>
             </div>
             <div>
-              <Button url="#" type="link">
+              <Button url="/contacts" type="link">
                 Contact Us Today
               </Button>
             </div>
@@ -171,7 +171,7 @@ export default function HomeJourney() {
                 </p>
               </div>
               <Button url="#" type="link">
-                Get Started With the User Guide
+              Create an Account and Start Exchanging!
               </Button>
             </div>
             <div className={styles.readyToStartImage}></div>

@@ -50,7 +50,7 @@ export default function Footer() {
               <Link href="#">User Guide</Link>
               <Link href="#">Support Center</Link>
               <Link href="/insights">Insights</Link>
-              <Link href="#">Contacts</Link>
+              <Link href="/contacts">Contacts</Link>
             </nav>
           </div>
           <div className={styles.footerContentWrapperItem}>

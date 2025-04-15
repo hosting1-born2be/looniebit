@@ -66,7 +66,7 @@ export default function Header() {
             <Link href="#">User Guide</Link>
             <Link href="#">Support Center</Link>
             <Link href="/insights">Insights</Link>
-            <Link href="#">Contacts</Link>
+            <Link href="/contacts">Contacts</Link>
           </nav>
           <div className={styles.headerMainButtons}>
             <Link href="#" className={styles.headerMainButtonsLogin}>
@@ -90,7 +90,7 @@ export default function Header() {
           <Link href="#">User Guide</Link>
           <Link href="#">Support Center</Link>
           <Link href="/insights">Insights</Link>
-          <Link href="#">Contacts</Link>
+          <Link href="/contacts">Contacts</Link>
         </nav>
         <div className={styles.socials}>
           <Link href={YOUTUBE_URL} target="_blank">
