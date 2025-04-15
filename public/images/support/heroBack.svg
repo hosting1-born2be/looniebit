@@ -1,0 +1,82 @@
+<svg width="727" height="541" viewBox="0 0 727 541" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.7" clip-path="url(#clip0_141_9995)">
+<g clip-path="url(#clip1_141_9995)">
+<rect width="1" height="534" transform="translate(16 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(47 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(78 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(109 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(140 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(171 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(202 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(233 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(264 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(295 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(326 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(357 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(388 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(419 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(450 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(481 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(512 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(543 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(574 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(605 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(636 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(667 3)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(698 3)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 17) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 48) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 79) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 110) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 141) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 172) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 203) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 234) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 265) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 296) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 327) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 358) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 389) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 420) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 451) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 482) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1084 513) rotate(90)" fill="#222222"/>
+<g opacity="0.3" filter="url(#filter0_f_141_9995)">
+<circle cx="373.994" cy="365.798" r="188.169" transform="rotate(-10.0319 373.994 365.798)" fill="#79FFB5"/>
+</g>
+</g>
+<rect x="-356" y="360" width="1440" height="200" fill="url(#paint0_linear_141_9995)"/>
+<rect width="1438" height="200" transform="matrix(1 0 0 -1 -355 179)" fill="url(#paint1_linear_141_9995)"/>
+<rect width="600" height="200" transform="matrix(0 1 1 0 527 -40)" fill="url(#paint2_linear_141_9995)"/>
+<rect x="200" y="-40" width="600" height="200" transform="rotate(90 200 -40)" fill="url(#paint3_linear_141_9995)"/>
+</g>
+<defs>
+<filter id="filter0_f_141_9995" x="-14.207" y="-22.4025" width="776.4" height="776.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_141_9995"/>
+</filter>
+<linearGradient id="paint0_linear_141_9995" x1="364" y1="360" x2="364" y2="560" gradientUnits="userSpaceOnUse">
+<stop stop-color="#101010" stop-opacity="0"/>
+<stop offset="1" stop-color="#101010"/>
+</linearGradient>
+<linearGradient id="paint1_linear_141_9995" x1="719" y1="0" x2="719" y2="200" gradientUnits="userSpaceOnUse">
+<stop stop-color="#101010" stop-opacity="0"/>
+<stop offset="1" stop-color="#101010"/>
+</linearGradient>
+<linearGradient id="paint2_linear_141_9995" x1="300" y1="0" x2="300" y2="200" gradientUnits="userSpaceOnUse">
+<stop stop-color="#101010" stop-opacity="0"/>
+<stop offset="1" stop-color="#101010"/>
+</linearGradient>
+<linearGradient id="paint3_linear_141_9995" x1="500" y1="-40" x2="500" y2="160" gradientUnits="userSpaceOnUse">
+<stop stop-color="#101010" stop-opacity="0"/>
+<stop offset="1" stop-color="#101010"/>
+</linearGradient>
+<clipPath id="clip0_141_9995">
+<rect width="727" height="541" fill="white"/>
+</clipPath>
+<clipPath id="clip1_141_9995">
+<rect width="1440" height="606" fill="white" transform="translate(-356 -33)"/>
+</clipPath>
+</defs>
+</svg>
