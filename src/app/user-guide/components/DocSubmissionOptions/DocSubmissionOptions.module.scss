@@ -1,0 +1,154 @@
+.layout {
+  margin: 120px 162px;
+
+  @media (max-width: 768px) {
+    margin: 64px 16px;
+  }
+}
+
+.title {
+  color: #FFF;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+.subtitle {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 80px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 48px;
+  }
+}
+
+.tables {
+  display: flex;
+  gap: 24px;
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
+}
+
+.formLayout {
+  width: 100%;
+  border: 1px solid #242424;
+  display: flex;
+  flex-direction: column;
+}
+
+.formTitle {
+  color: #FFF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  width: 195px;
+}
+
+.formHeading {
+  color: #FFF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.formSubHeading {
+  color: #FFF;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 12px;
+}
+
+.formText {
+  color: #B7B7B7;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.formContent {
+  padding: 24px 0 40px 24px;
+  display: flex;
+  align-items: flex-end;
+  gap: 32px;
+  border-bottom: 1px dashed #242424;
+
+  &:last-child {
+    padding: 40px 0 24px 24px;
+    border-bottom: 0;
+  }
+}
+
+.formTitleLayout {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.formDesc {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 16px;
+  margin-bottom: 40px;
+}
+
+.formList {
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  li {
+    list-style-type: disc;
+  }
+}
+
+.guidelineLayout {
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    transform: translateY(50%);
+    content: "";
+    position: absolute;
+    inset: 0;
+    opacity: 0.4;
+    background-image: url("./mask.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+  }
+}
+
+.num {
+  color: #72FFB1;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}

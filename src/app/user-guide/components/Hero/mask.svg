@@ -1,0 +1,56 @@
+<svg width="612" height="334" viewBox="0 0 612 334" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_141_9889" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="612" height="334">
+<g opacity="0.7" clip-path="url(#clip0_141_9889)">
+<g clip-path="url(#clip1_141_9889)">
+<rect width="1" height="534" transform="translate(37 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(68 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(99 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(130 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(161 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(192 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(223 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(254 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(285 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(316 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(347 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(378 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(409 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(440 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(471 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(502 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(533 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(564 -137)" fill="#222222"/>
+<rect width="1" height="534" transform="translate(595 -137)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1477 1) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1477 32) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1477 63) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1477 94) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1477 125) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1477 156) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1477 187) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1477 218) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1477 249) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1477 280) rotate(90)" fill="#222222"/>
+<rect width="1.00003" height="1440" transform="translate(1477 311) rotate(90)" fill="#222222"/>
+</g>
+</g>
+</mask>
+<g mask="url(#mask0_141_9889)">
+<g opacity="0.4" filter="url(#filter0_f_141_9889)">
+<ellipse cx="285.5" cy="179" rx="158.5" ry="84" fill="#72F1FF" fill-opacity="0.4"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_141_9889" x="27" y="-5" width="517" height="368" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="50" result="effect1_foregroundBlur_141_9889"/>
+</filter>
+<clipPath id="clip0_141_9889">
+<rect width="612" height="334" fill="white"/>
+</clipPath>
+<clipPath id="clip1_141_9889">
+<rect width="559" height="606" fill="white" transform="translate(37 -173)"/>
+</clipPath>
+</defs>
+</svg>
