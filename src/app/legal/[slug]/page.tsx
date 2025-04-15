@@ -37,7 +37,7 @@ export default async function LegalPage({
   const { slug } = awaitedParams;
   const policy = await getPolicy({ slug });
 
-  const date = new Date(policy?.last_updated || "");
+  //const date = new Date(policy?.last_updated || "");
 
   if (!policy) {
     return <div className={styles.notFound}>Policy not found</div>;
@@ -48,10 +48,9 @@ export default async function LegalPage({
       <div className={styles.insightPage}>
         <div className={"_container"}>
           <div className={styles.insightContent}>
-            <h1 className={styles.title}>{policy.title}</h1>
-            <h2 className={styles.lastUpdated}>
-              Last updated: {date.toLocaleDateString()}
-            </h2>
+            <div className={styles.titleWrapper}>
+              <h1 className={styles.title}>{policy.title}</h1>
+            </div>
 
             <div className={styles.content}>
               {renderContent(policy.content)}

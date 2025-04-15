@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 
 import {
   WEBSITE_EMAIL,
-  WEBSITE_OFFICE_ADDRESS,
   WEBSITE_PHONE,
+  WEBSITE_PHONE_2,
   WEBSITE_REGISTRATION_ADDRESS,
 } from "@/shared/lib/constants/constants";
 import { fadeInUp } from "@/shared/lib/helpers/animations";
@@ -16,28 +16,6 @@ import styles from "../ContactsWrap/ContactsWrap.module.scss";
 export default function ContactsDetails() {
   return (
     <div className={styles.contactsDetailsContent}>
-      <div className={styles.item}>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeInUp}
-        >
-          <h2>Our Office</h2>
-          <p>
-            We would be happy to meet with you! Visit us at the address below:
-          </p>
-          <div className={styles.address}>
-            <Image
-              src="/images/contacts/location.svg"
-              alt="map"
-              width={20}
-              height={20}
-            />
-            <span>{WEBSITE_OFFICE_ADDRESS}</span>
-          </div>
-        </motion.div>
-      </div>
       <div className={styles.item}>
         <motion.div
           initial="hidden"
@@ -87,15 +65,23 @@ export default function ContactsDetails() {
         >
           <h2>Call Us</h2>
           <p>You can also reach us by phone for quick inquiries:</p>
-          <Link href={`tel:${WEBSITE_PHONE}`} className={styles.address}>
+          <div className={styles.phones}>
             <Image
               src="/images/contacts/phone.svg"
               alt="map"
               width={20}
               height={20}
             />
-            <span>{WEBSITE_PHONE}</span>
-          </Link>
+            <span>
+              <Link href={`tel:${WEBSITE_PHONE}`} className={styles.address}>
+                <span>{WEBSITE_PHONE}</span>
+              </Link>
+              {" or "}
+              <Link href={`tel:${WEBSITE_PHONE_2}`} className={styles.address}>
+                <span>{WEBSITE_PHONE_2}</span>
+              </Link>
+            </span>
+          </div>
         </motion.div>
       </div>
     </div>

@@ -121,11 +121,13 @@
 
     .contactsDetailsContent {
       display: flex;
-      flex-wrap: wrap;
       border: 1px solid #242424;
       background: #101010;
+      @media (max-width: 992px) {
+        flex-direction: column;
+      }
       .item {
-        width: 50%;
+        width: 33.33%;
         padding: 24px;
         border-bottom: 1px solid #242424;
         @media (max-width: 992px) {
@@ -137,7 +139,7 @@
             border-right: none;
           }
         }
-        &:nth-child(3) {
+        &:nth-child(2) {
           border-right: 1px dashed #242424;
           @media (max-width: 992px) {
             border-right: none;
@@ -158,6 +160,26 @@
           font-weight: 400;
           line-height: normal;
           margin-bottom: 24px;
+        }
+        .phones {
+          display: flex;
+          align-items: center;
+          gap: 6px;
+          color: #b7b7b7;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          img {
+            width: 20px;
+            height: 20px;
+          }
+          > span {
+            width: calc(100% - 26px);
+          }
+          a {
+            display: inline;
+          }
         }
         .address {
           display: flex;

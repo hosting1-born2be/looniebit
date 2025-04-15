@@ -7,24 +7,25 @@ import styles from "./cryptoTicker.module.scss";
 type Crypto = {
   id: string;
   symbol: string;
+  name: string;
 };
 
 const CRYPTO_LIST: Crypto[] = [
-  { id: "bitcoin", symbol: "BTC" },
-  { id: "ethereum", symbol: "ETH" },
-  { id: "solana", symbol: "SOL" },
-  { id: "cardano", symbol: "ADA" },
-  { id: "ripple", symbol: "XRP" },
-  { id: "polkadot", symbol: "DOT" },
-  { id: "dogecoin", symbol: "DOGE" },
-  { id: "avalanche-2", symbol: "AVAX" },
-  { id: "chainlink", symbol: "LINK" },
-  { id: "polygon", symbol: "MATIC" },
-  { id: "shiba-inu", symbol: "SHIB" },
-  { id: "litecoin", symbol: "LTC" },
-  { id: "uniswap", symbol: "UNI" },
-  { id: "monero", symbol: "XMR" },
-  { id: "stellar", symbol: "XLM" }
+  { id: "BTCUSDT", symbol: "BTC", name: "Bitcoin" },
+  { id: "ETHUSDT", symbol: "ETH", name: "Ethereum" },
+  { id: "SOLUSDT", symbol: "SOL", name: "Solana" },
+  { id: "ADAUSDT", symbol: "ADA", name: "Cardano" },
+  { id: "XRPUSDT", symbol: "XRP", name: "Ripple" },
+  { id: "DOTUSDT", symbol: "DOT", name: "Polkadot" },
+  { id: "DOGEUSDT", symbol: "DOGE", name: "Dogecoin" },
+  { id: "AVAXUSDT", symbol: "AVAX", name: "Avalanche" },
+  { id: "LINKUSDT", symbol: "LINK", name: "Chainlink" },
+  { id: "MATICUSDT", symbol: "MATIC", name: "Polygon" },
+  { id: "SHIBUSDT", symbol: "SHIB", name: "Shiba Inu" },
+  { id: "LTCUSDT", symbol: "LTC", name: "Litecoin" },
+  { id: "UNIUSDT", symbol: "UNI", name: "Uniswap" },
+  { id: "XMRUSDT", symbol: "XMR", name: "Monero" },
+  { id: "XLMUSDT", symbol: "XLM", name: "Stellar" }
 ];
 
 type PriceDetails = {
@@ -36,19 +37,40 @@ type PriceData = {
   [key: string]: PriceDetails;
 };
 
-const fetchCoinData = async (coinIds: string[]): Promise<PriceData> => {
+type BinanceTickerData = {
+  symbol: string;
+  lastPrice: string;
+  priceChangePercent: string;
+};
+
+const fetchCoinData = async (): Promise<PriceData> => {
   try {
-    const idsParam = coinIds.join("%2C");
     const res = await fetch(
-      `https://api.coingecko.com/api/v3/simple/price?ids=${idsParam}&vs_currencies=usd&include_24hr_change=true`
+      "https://api.binance.com/api/v3/ticker/24hr"
     );
+    
     if (!res.ok) {
-      throw new Error("Failed to fetch");
+      throw new Error(`API error: ${res.status}`);
     }
-    const data: PriceData = await res.json();
-    return data;
+    
+    const data: BinanceTickerData[] = await res.json();
+    const priceData: PriceData = {};
+    
+    console.log(data);
+
+    data.forEach((item: BinanceTickerData) => {
+      const cryptoItem = CRYPTO_LIST.find(crypto => crypto.id === item.symbol);
+      if (cryptoItem) {
+        priceData[cryptoItem.symbol.toLowerCase()] = {
+          usd: parseFloat(item.lastPrice),
+          usd_24h_change: parseFloat(item.priceChangePercent)
+        };
+      }
+    });
+
+    return priceData;
   } catch (error) {
-    console.error(error);
+    console.error("Failed to fetch crypto data:", error);
     return {};
   }
 };
@@ -57,9 +79,8 @@ const CryptoTicker: React.FC = () => {
   const [prices, setPrices] = useState<PriceData>({});
 
   const updatePrices = async () => {
-    const coinIds = CRYPTO_LIST.map((coin) => coin.id);
-    const data = await fetchCoinData(coinIds);
-    console.log(data);
+    const data = await fetchCoinData();
+    
     setPrices(data);
   };
 
@@ -67,20 +88,20 @@ const CryptoTicker: React.FC = () => {
     updatePrices();
     const interval = setInterval(() => {
       updatePrices();
-    }, 30000);
+    }, 10000); // Update every 10 seconds
     return () => clearInterval(interval);
   }, []);
 
   const tickerItems = CRYPTO_LIST.map((coin) => {
-    const priceData = prices[coin.id];
+    const priceData = prices[coin.symbol.toLowerCase()];
     const price = priceData ? priceData.usd : null;
     const change = priceData ? priceData.usd_24h_change : null;
     return (
       <div key={coin.id} className={styles.tickerItem}>
-        <span className={styles.name}>{coin.id}</span>
-        <span className={styles.symbol}>{coin.symbol.toUpperCase()}</span>
+        <span className={styles.name}>{coin.name}</span>
+        <span className={styles.symbol}>{coin.symbol}</span>
         <span className={styles.price}>
-          {price !== null ? `$${price}` : "..."}
+          {price !== null ? `$${price.toFixed(2)}` : "..."}
         </span>
         <span
           className={`${styles.change} ${

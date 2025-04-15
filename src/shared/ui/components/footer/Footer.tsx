@@ -56,12 +56,12 @@ export default function Footer() {
               <Link href="/legal/terms-and-conditions">
                 Terms and Conditions
               </Link>
-              <Link href="#">Privacy Policy</Link>
-              <Link href="#">Cookie Policy</Link>
-              <Link href="#">Refund Policy</Link>
-              <Link href="#">Disclaimer</Link>
-              <Link href="#">AML Policy</Link>
-              <Link href="#">Complaints Procedure</Link>
+              <Link href="/legal/privacy-policy">Privacy Policy</Link>
+              <Link href="/legal/cookie-policy">Cookie Policy</Link>
+              <Link href="/legal/refund-policy">Refund Policy</Link>
+              <Link href="/legal/disclaimer">Disclaimer</Link>
+              <Link href="/legal/aml-policy">AML Policy</Link>
+              <Link href="/legal/complaints-procedure">Complaints Procedure</Link>
             </nav>
           </div>
           <div className={styles.footerContentWrapperItem}>
@@ -75,13 +75,8 @@ export default function Footer() {
       <div className={styles.footerBottom}>
         <div>
           <p>© {new Date().getFullYear()} All rights reserved</p>
-          <span>
-            LoonieBit is operated by COMPANY NAME (Registration No. NUMBER),
-            which is authorized to offer virtual currency services. The company
-            is registered at REGISTERED ADDRESS.
-          </span>
         </div>
-        <Image src="/images/visa.svg" alt="visa" width={61} height={36} />
+        <Image src="/images/visa.svg" alt="visa" width={134} height={36} />
       </div>
     </footer>
   );
