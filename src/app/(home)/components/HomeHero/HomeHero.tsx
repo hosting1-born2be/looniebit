@@ -1,15 +1,16 @@
-"use client";
-import { motion } from "framer-motion";
+'use client';
+import { motion } from 'framer-motion';
 
-import { fadeInUp } from "@/shared/lib/helpers/animations";
-import Button from "@/shared/ui/components/button/Button";
+import { LINKS } from '@/shared/lib/constants/constants';
+import { fadeInUp } from '@/shared/lib/helpers/animations';
+import Button from '@/shared/ui/components/button/Button';
 
-import styles from "./HomeHero.module.scss";
+import styles from './HomeHero.module.scss';
 
 export default function HomeHero() {
   return (
     <section className={styles.homeHero}>
-      <div className={"_container"}>
+      <div className={'_container'}>
         <div className={styles.homeHeroContent}>
           <motion.div
             initial="hidden"
@@ -51,7 +52,7 @@ export default function HomeHero() {
             variants={fadeInUp}
             className={styles.button}
           >
-            <Button url="#" type="link">
+            <Button url={LINKS.SIGN_UP} type="link">
               Start Your Journey
             </Button>
           </motion.div>

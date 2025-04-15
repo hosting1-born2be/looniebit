@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+import { LINKS } from '@/shared/lib/constants/constants';
 import { fadeInUp } from "@/shared/lib/helpers/animations";
 import Button from "@/shared/ui/components/button/Button";
 
@@ -38,7 +39,7 @@ export default function SupportFaq() {
             variants={fadeInUp}
             className={styles.button}
           >
-            <Button url="#" type="link">
+            <Button url={LINKS.FAQ} type="link">
               Explore the FAQ
             </Button>
           </motion.div>

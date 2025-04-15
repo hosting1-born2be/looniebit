@@ -1,12 +1,13 @@
 "use client";
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import React from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 
-import { fadeInUp } from "@/shared/lib/helpers/animations";
-import Button from "@/shared/ui/components/button/Button";
+import { LINKS } from '@/shared/lib/constants/constants';
+import { fadeInUp } from '@/shared/lib/helpers/animations';
+import Button from '@/shared/ui/components/button/Button';
 
-import styles from "./SupportCenter.module.scss";
+import styles from './SupportCenter.module.scss';
 
 export default function SupportCenter() {
   return (
@@ -59,7 +60,7 @@ export default function SupportCenter() {
                     anything from account issues to technical questions.
                   </p>
                 </div>
-                <Button url="#" type="link">
+                <Button url={LINKS.SUPPORT} type="link">
                   Submit Your Ticket
                 </Button>
               </motion.div>
@@ -86,7 +87,7 @@ export default function SupportCenter() {
                     resolution of your issue.
                   </p>
                 </div>
-                <Button url="#" type="link">
+                <Button url={LINKS.SUPPORT} type="link">
                   Track Your Ticket
                 </Button>
               </motion.div>

@@ -25,7 +25,7 @@ export default function ContactsHelp() {
             need.
           </p>
         </div>
-        <Button url="#" type="link">
+        <Button url="/support-center" type="link">
           Go to Support Center
         </Button>
       </div>

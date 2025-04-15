@@ -1,21 +1,16 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+'use client';
+import React, { useEffect, useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import {
-  FACEBOOK_URL,
-  INSTAGRAM_URL,
-  WEBSITE_EMAIL,
-  YOUTUBE_URL,
-} from "@/shared/lib/constants/constants";
+import { LINKS, WEBSITE_EMAIL } from '@/shared/lib/constants/constants';
 
-import Burger from "../../icons/burger/burger";
-import Facebook from "../../icons/socials/Facebook";
-import Instagram from "../../icons/socials/Instagram";
-import Youtube from "../../icons/socials/Youtube";
-import CryptoTicker from "../cryptoTicker/cryptoTicker";
-import styles from "./header.module.scss";
+import Burger from '../../icons/burger/burger';
+import Facebook from '../../icons/socials/Facebook';
+import Instagram from '../../icons/socials/Instagram';
+import Youtube from '../../icons/socials/Youtube';
+import CryptoTicker from '../cryptoTicker/cryptoTicker';
+import styles from './header.module.scss';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,9 +21,9 @@ export default function Header() {
 
   useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.style.overflow = "hidden";
+      document.body.style.overflow = 'hidden';
     } else {
-      document.body.style.overflow = "auto";
+      document.body.style.overflow = 'auto';
     }
   }, [isMobileMenuOpen]);
 
@@ -40,13 +35,13 @@ export default function Header() {
             <Link href={`mailto:${WEBSITE_EMAIL}`}>{WEBSITE_EMAIL}</Link>
           </div>
           <div className={styles.headerTopSocials}>
-            <Link href={YOUTUBE_URL} target="_blank">
+            <Link href={LINKS.YOUTUBE} target="_blank">
               <Youtube />
             </Link>
-            <Link href={FACEBOOK_URL} target="_blank">
+            <Link href={LINKS.FACEBOOK} target="_blank">
               <Facebook />
             </Link>
-            <Link href={INSTAGRAM_URL} target="_blank">
+            <Link href={LINKS.INSTAGRAM} target="_blank">
               <Instagram />
             </Link>
           </div>
@@ -56,7 +51,7 @@ export default function Header() {
             <Burger />
           </div>
           <Link href="/" className={styles.headerMainLogo}>
-            <Image src="/images/logo.svg" alt="logo" width={100} height={24} />
+            <Image src="/images/logo.svg" alt="logo" width={111} height={21} />
           </Link>
           <nav className={styles.headerMainNav}>
             <Link href="/">Home</Link>
@@ -79,7 +74,7 @@ export default function Header() {
       <CryptoTicker />
       <div
         className={`${styles.mobileMenu} ${
-          isMobileMenuOpen ? styles.active : ""
+          isMobileMenuOpen ? styles.active : ''
         }`}
       >
         <nav className={styles.headerMainNav}>
@@ -91,13 +86,13 @@ export default function Header() {
           <Link href="/contacts">Contacts</Link>
         </nav>
         <div className={styles.socials}>
-          <Link href={YOUTUBE_URL} target="_blank">
+          <Link href={LINKS.YOUTUBE} target="_blank">
             <Youtube />
           </Link>
-          <Link href={FACEBOOK_URL} target="_blank">
+          <Link href={LINKS.FACEBOOK} target="_blank">
             <Facebook />
           </Link>
-          <Link href={INSTAGRAM_URL} target="_blank">
+          <Link href={LINKS.INSTAGRAM} target="_blank">
             <Instagram />
           </Link>
         </div>

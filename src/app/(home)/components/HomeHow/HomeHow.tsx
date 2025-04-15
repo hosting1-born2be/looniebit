@@ -127,7 +127,7 @@ export default function HomeHow() {
             variants={fadeInUp}
             className={styles.button}
           >
-            <Button url="#" type="link">
+            <Button url="/user-guide" type="link">
               Get Started With the User Guide
             </Button>
           </motion.div>
