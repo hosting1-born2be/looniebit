@@ -2,6 +2,7 @@ export type ContentChild = {
   type?: string;
   text?: string;
   format?: number;
+  tag?: string;
   fields?: {
     url?: string;
   };
