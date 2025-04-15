@@ -62,10 +62,16 @@ export default function Header() {
             <Link href="/contacts">Contacts</Link>
           </nav>
           <div className={styles.headerMainButtons}>
-            <Link href="#" className={styles.headerMainButtonsLogin}>
+            <Link
+              href={LINKS.SIGN_IN}
+              className={styles.headerMainButtonsLogin}
+            >
               Login
             </Link>
-            <Link href="#" className={styles.headerMainButtonsSignUp}>
+            <Link
+              href={LINKS.SIGN_UP}
+              className={styles.headerMainButtonsSignUp}
+            >
               Sign Up
             </Link>
           </div>
