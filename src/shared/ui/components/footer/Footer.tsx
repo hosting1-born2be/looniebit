@@ -1,39 +1,34 @@
-import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 
-import {
-  FACEBOOK_URL,
-  INSTAGRAM_URL,
-  WEBSITE_EMAIL,
-  YOUTUBE_URL,
-} from "@/shared/lib/constants/constants";
+import { LINKS, WEBSITE_EMAIL } from '@/shared/lib/constants/constants';
 
-import Facebook from "../../icons/socials/Facebook";
-import Instagram from "../../icons/socials/Instagram";
-import Youtube from "../../icons/socials/Youtube";
-import styles from "./footer.module.scss";
+import Facebook from '../../icons/socials/Facebook';
+import Instagram from '../../icons/socials/Instagram';
+import Youtube from '../../icons/socials/Youtube';
+import styles from './footer.module.scss';
 
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
-        <Link href={"#"}>
-          <Image src="/images/logo.svg" alt="logo" width={100} height={24} />
+        <Link href={'#'}>
+          <Image src="/images/logo.svg" alt="logo" width={111} height={21} />
         </Link>
         <div className={styles.footerContentWrapper}>
           <div className={styles.footerContentWrapperItem}>
             <h3>Stay Social</h3>
             <nav>
-              <Link href={YOUTUBE_URL}>
+              <Link href={LINKS.YOUTUBE} target="_blank">
                 <Youtube />
                 YouTube
               </Link>
-              <Link href={FACEBOOK_URL}>
+              <Link href={LINKS.FACEBOOK} target="_blank">
                 <Facebook />
                 Facebook
               </Link>
-              <Link href={INSTAGRAM_URL}>
+              <Link href={LINKS.INSTAGRAM} target="_blank">
                 <Instagram />
                 Instagram
               </Link>

@@ -1,12 +1,13 @@
 "use client";
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import React from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 
-import { fadeInUp } from "@/shared/lib/helpers/animations";
-import Button from "@/shared/ui/components/button/Button";
+import { LINKS } from '@/shared/lib/constants/constants';
+import { fadeInUp } from '@/shared/lib/helpers/animations';
+import Button from '@/shared/ui/components/button/Button';
 
-import styles from "./HomeJourney.module.scss";
+import styles from './HomeJourney.module.scss';
 
 export default function HomeJourney() {
   return (
@@ -170,8 +171,8 @@ export default function HomeJourney() {
                   exchange cryptocurrencies securely, quickly, and easily.
                 </p>
               </div>
-              <Button url="#" type="link">
-              Create an Account and Start Exchanging!
+              <Button url={LINKS.SIGN_UP} type="link">
+                Create an Account and Start Exchanging!
               </Button>
             </div>
             <div className={styles.readyToStartImage}></div>

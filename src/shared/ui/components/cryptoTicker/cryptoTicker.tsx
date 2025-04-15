@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react';
 
-import Negative from "../../icons/ticker/negative";
-import Positiv from "../../icons/ticker/positiv";
-import styles from "./cryptoTicker.module.scss";
+import Negative from '../../icons/ticker/negative';
+import Positiv from '../../icons/ticker/positiv';
+import styles from './cryptoTicker.module.scss';
 
 type Crypto = {
   id: string;
@@ -11,21 +11,21 @@ type Crypto = {
 };
 
 const CRYPTO_LIST: Crypto[] = [
-  { id: "BTCUSDT", symbol: "BTC", name: "Bitcoin" },
-  { id: "ETHUSDT", symbol: "ETH", name: "Ethereum" },
-  { id: "SOLUSDT", symbol: "SOL", name: "Solana" },
-  { id: "ADAUSDT", symbol: "ADA", name: "Cardano" },
-  { id: "XRPUSDT", symbol: "XRP", name: "Ripple" },
-  { id: "DOTUSDT", symbol: "DOT", name: "Polkadot" },
-  { id: "DOGEUSDT", symbol: "DOGE", name: "Dogecoin" },
-  { id: "AVAXUSDT", symbol: "AVAX", name: "Avalanche" },
-  { id: "LINKUSDT", symbol: "LINK", name: "Chainlink" },
-  { id: "MATICUSDT", symbol: "MATIC", name: "Polygon" },
-  { id: "SHIBUSDT", symbol: "SHIB", name: "Shiba Inu" },
-  { id: "LTCUSDT", symbol: "LTC", name: "Litecoin" },
-  { id: "UNIUSDT", symbol: "UNI", name: "Uniswap" },
-  { id: "XMRUSDT", symbol: "XMR", name: "Monero" },
-  { id: "XLMUSDT", symbol: "XLM", name: "Stellar" }
+  { id: 'BTCUSDT', symbol: 'BTC', name: 'Bitcoin' },
+  { id: 'ETHUSDT', symbol: 'ETH', name: 'Ethereum' },
+  { id: 'SOLUSDT', symbol: 'SOL', name: 'Solana' },
+  { id: 'ADAUSDT', symbol: 'ADA', name: 'Cardano' },
+  { id: 'XRPUSDT', symbol: 'XRP', name: 'Ripple' },
+  { id: 'DOTUSDT', symbol: 'DOT', name: 'Polkadot' },
+  { id: 'DOGEUSDT', symbol: 'DOGE', name: 'Dogecoin' },
+  { id: 'AVAXUSDT', symbol: 'AVAX', name: 'Avalanche' },
+  { id: 'LINKUSDT', symbol: 'LINK', name: 'Chainlink' },
+  { id: 'MATICUSDT', symbol: 'MATIC', name: 'Polygon' },
+  { id: 'SHIBUSDT', symbol: 'SHIB', name: 'Shiba Inu' },
+  { id: 'LTCUSDT', symbol: 'LTC', name: 'Litecoin' },
+  { id: 'UNIUSDT', symbol: 'UNI', name: 'Uniswap' },
+  { id: 'XMRUSDT', symbol: 'XMR', name: 'Monero' },
+  { id: 'XLMUSDT', symbol: 'XLM', name: 'Stellar' },
 ];
 
 type PriceDetails = {
@@ -45,32 +45,28 @@ type BinanceTickerData = {
 
 const fetchCoinData = async (): Promise<PriceData> => {
   try {
-    const res = await fetch(
-      "https://api.binance.com/api/v3/ticker/24hr"
-    );
-    
+    const res = await fetch('https://api.binance.com/api/v3/ticker/24hr');
+
     if (!res.ok) {
       throw new Error(`API error: ${res.status}`);
     }
-    
+
     const data: BinanceTickerData[] = await res.json();
     const priceData: PriceData = {};
-    
-    console.log(data);
 
     data.forEach((item: BinanceTickerData) => {
       const cryptoItem = CRYPTO_LIST.find(crypto => crypto.id === item.symbol);
       if (cryptoItem) {
         priceData[cryptoItem.symbol.toLowerCase()] = {
           usd: parseFloat(item.lastPrice),
-          usd_24h_change: parseFloat(item.priceChangePercent)
+          usd_24h_change: parseFloat(item.priceChangePercent),
         };
       }
     });
 
     return priceData;
   } catch (error) {
-    console.error("Failed to fetch crypto data:", error);
+    console.error('Failed to fetch crypto data:', error);
     return {};
   }
 };
@@ -80,7 +76,7 @@ const CryptoTicker: React.FC = () => {
 
   const updatePrices = async () => {
     const data = await fetchCoinData();
-    
+
     setPrices(data);
   };
 
@@ -92,7 +88,7 @@ const CryptoTicker: React.FC = () => {
     return () => clearInterval(interval);
   }, []);
 
-  const tickerItems = CRYPTO_LIST.map((coin) => {
+  const tickerItems = CRYPTO_LIST.map(coin => {
     const priceData = prices[coin.symbol.toLowerCase()];
     const price = priceData ? priceData.usd : null;
     const change = priceData ? priceData.usd_24h_change : null;
@@ -101,7 +97,7 @@ const CryptoTicker: React.FC = () => {
         <span className={styles.name}>{coin.name}</span>
         <span className={styles.symbol}>{coin.symbol}</span>
         <span className={styles.price}>
-          {price !== null ? `$${price.toFixed(2)}` : "..."}
+          {price !== null ? `$${price.toFixed(2)}` : '...'}
         </span>
         <span
           className={`${styles.change} ${
@@ -109,7 +105,7 @@ const CryptoTicker: React.FC = () => {
               ? change >= 0
                 ? styles.positive
                 : styles.negative
-              : ""
+              : ''
           }`}
         >
           {change !== null ? (
@@ -118,7 +114,7 @@ const CryptoTicker: React.FC = () => {
               <span>{change.toFixed(2)}%</span>
             </>
           ) : (
-            "..."
+            '...'
           )}
         </span>
       </div>

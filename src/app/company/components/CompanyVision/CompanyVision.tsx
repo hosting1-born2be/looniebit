@@ -27,12 +27,9 @@ export default function CompanyVision() {
     target: element,
     offset: isMobile
       ? ["start 0.9", "start 0.5"]
-      : ["start 0.7", "start start"],
+      : ["start 0.5", "start start"],
   });
 
-  useEffect(() => {
-    console.log(scrollYProgress);
-  }, [scrollYProgress]);
 
   const words = text.split(" ");
 

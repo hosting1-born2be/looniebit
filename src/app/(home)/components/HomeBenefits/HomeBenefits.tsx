@@ -1,12 +1,13 @@
 "use client";
-import React from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import React from 'react';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
 
-import { fadeInUp } from "@/shared/lib/helpers/animations";
-import Button from "@/shared/ui/components/button/Button";
+import { LINKS } from '@/shared/lib/constants/constants';
+import { fadeInUp } from '@/shared/lib/helpers/animations';
+import Button from '@/shared/ui/components/button/Button';
 
-import styles from "./HomeBenefits.module.scss";
+import styles from './HomeBenefits.module.scss';
 
 export default function HomeBenefits() {
   return (
@@ -125,7 +126,7 @@ export default function HomeBenefits() {
             variants={fadeInUp}
             className={styles.button}
           >
-            <Button url="#" type="link">
+            <Button url={LINKS.SIGN_UP} type="link">
               Sign Up Now
             </Button>
           </motion.div>

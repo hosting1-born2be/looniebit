@@ -1,11 +1,12 @@
-"use client";
-import React from "react";
-import { motion } from "framer-motion";
+'use client';
+import React from 'react';
+import { motion } from 'framer-motion';
 
-import { fadeInUp } from "@/shared/lib/helpers/animations";
-import Button from "@/shared/ui/components/button/Button";
+import { LINKS } from '@/shared/lib/constants/constants';
+import { fadeInUp } from '@/shared/lib/helpers/animations';
+import Button from '@/shared/ui/components/button/Button';
 
-import styles from "./CompanyStarted.module.scss";
+import styles from './CompanyStarted.module.scss';
 
 export default function CompanyStarted() {
   return (
@@ -27,7 +28,7 @@ export default function CompanyStarted() {
                 for you to start your digital asset journey.
               </p>
             </div>
-            <Button url="#" type="link">
+            <Button url={LINKS.SIGN_UP} type="link">
               Sign Up and Begin Your Crypto Journey
             </Button>
           </div>

@@ -4,7 +4,6 @@ import { getInsights } from "@/features/insights/get-insights";
 
 export default async function FeaturedInsights({ slug }: { slug: string }) {
   const insights = await getInsights(3, slug);
-  console.log(insights);
   return (
     <section className={styles.featuredInsights}>
       {insights.map((insight) => (

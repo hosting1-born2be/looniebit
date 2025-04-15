@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
+import { LINKS } from '@/shared/lib/constants/constants';
 import { fadeInUp } from "@/shared/lib/helpers/animations";
 import Button from "@/shared/ui/components/button/Button";
 
@@ -50,7 +51,7 @@ export default function InsightsHero() {
             variants={fadeInUp}
             className={styles.button}
           >
-            <Button url="#" type="link">
+            <Button url={LINKS.SIGN_UP} type="link">
               Start Your Journey
             </Button>
           </motion.div>
