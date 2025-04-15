@@ -13,7 +13,7 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
-        <Link href={'#'}>
+        <Link href={'/'}>
           <Image src="/images/logo.svg" alt="logo" width={111} height={21} />
         </Link>
         <div className={styles.footerContentWrapper}>
