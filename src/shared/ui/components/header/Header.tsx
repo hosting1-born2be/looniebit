@@ -8,6 +8,7 @@ import {
   INSTAGRAM_URL,
   WEBSITE_EMAIL,
   WEBSITE_PHONE,
+  WEBSITE_PHONE_2,
   YOUTUBE_URL,
 } from "@/shared/lib/constants/constants";
 
@@ -39,7 +40,10 @@ export default function Header() {
         <div className={styles.headerTop}>
           <div className={styles.headerTopLeft}>
             <Link href={`mailto:${WEBSITE_EMAIL}`}>{WEBSITE_EMAIL}</Link>
-            <Link href={`tel:${WEBSITE_PHONE}`}>{WEBSITE_PHONE}</Link>
+            <div className={styles.headerTopPhone}>
+              <Link href={`tel:${WEBSITE_PHONE}`}>{WEBSITE_PHONE}</Link>
+              <Link href={`tel:${WEBSITE_PHONE_2}`}>{WEBSITE_PHONE_2}</Link>
+            </div>
           </div>
           <div className={styles.headerTopSocials}>
             <Link href={YOUTUBE_URL} target="_blank">
