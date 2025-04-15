@@ -128,8 +128,8 @@ export default function HomeWhy() {
             variants={fadeInUp}
             className={styles.button}
           >
-            <Button url="#" type="link">
-              Create Your Account Now
+            <Button url="/company" type="link">
+              About the Company
             </Button>
           </motion.div>
         </div>

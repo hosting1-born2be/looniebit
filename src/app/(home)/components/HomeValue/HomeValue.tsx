@@ -130,7 +130,7 @@ export default function HomeValue() {
             variants={fadeInUp}
             className={styles.button}
           >
-            <Button url="#" type="link">
+            <Button url="/insights" type="link">
               Explore Insights
             </Button>
           </motion.div>
