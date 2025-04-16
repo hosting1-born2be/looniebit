@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Support Center | Help with Your LoonieBit Account",
     description: "",
-    //images: "",
+    images: "https://looniebit.com/images/meta.png",
   },
 };
 

@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     title: "About LoonieBit | Regulated & Transparent Crypto Exchange",
     description:
       "Learn more about LoonieBit’s mission, licensing, and commitment to providing a secure, transparent, and compliant crypto trading environment.",
-    //images: "",
+    images: "https://looniebit.com/images/meta.png",
   },
 };
 
