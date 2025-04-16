@@ -26,6 +26,7 @@ export default function ContactsDetails() {
               alt="map"
               width={20}
               height={20}
+              quality={100}
             />
             <span>{WEBSITE_EMAIL}</span>
           </Link>

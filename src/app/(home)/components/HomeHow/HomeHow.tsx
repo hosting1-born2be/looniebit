@@ -45,6 +45,7 @@ export default function HomeHow() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Protected Transactions</h3>
                 <p>
@@ -66,6 +67,7 @@ export default function HomeHow() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Comprehensive Data Security</h3>
                 <p>
@@ -87,6 +89,7 @@ export default function HomeHow() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Mandatory KYC Verification</h3>
                 <p>
@@ -109,6 +112,7 @@ export default function HomeHow() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Commitment to Compliance</h3>
                 <p>

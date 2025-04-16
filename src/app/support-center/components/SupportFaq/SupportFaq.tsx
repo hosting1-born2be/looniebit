@@ -51,6 +51,7 @@ export default function SupportFaq() {
         height={250}
         alt="faqMain"
         className={styles.faqMain}
+        quality={100}
       />
       <Image
         src="/images/support/coinRight.png"
@@ -58,6 +59,7 @@ export default function SupportFaq() {
         height={150}
         alt="coinRight"
         className={styles.coinRight}
+        quality={100}
       />
       <Image
         src="/images/support/coinLeft.png"
@@ -65,13 +67,15 @@ export default function SupportFaq() {
         height={150}
         alt="coinLeft"
         className={styles.coinLeft}
-      />
+        quality={100}
+        />
       <Image
         src="/images/support/coinBottom.png"
         width={120}
         height={107}
         alt="coinBottom"
         className={styles.coinBottom}
+        quality={100}
       />
     </section>
   );

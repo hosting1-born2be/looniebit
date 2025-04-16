@@ -44,6 +44,7 @@ export default function CompanyDifferent() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Seamless Payment Methods</h3>
                 <p>
@@ -64,6 +65,7 @@ export default function CompanyDifferent() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>No Hidden Fees</h3>
                 <p>
@@ -84,6 +86,7 @@ export default function CompanyDifferent() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Advanced Security Protocols</h3>
                 <p>
@@ -103,6 +106,7 @@ export default function CompanyDifferent() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Easy-to-Use Interface</h3>
                 <p>
@@ -123,6 +127,7 @@ export default function CompanyDifferent() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Exceptional Support</h3>
                 <p>

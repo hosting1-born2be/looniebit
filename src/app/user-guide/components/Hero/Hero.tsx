@@ -25,6 +25,7 @@ export function Hero() {
             alt="btc-usd"
             width={156}
             height={153}
+            quality={100}
           />
           <Image
             className={st.btc}
@@ -32,6 +33,7 @@ export function Hero() {
             alt="btc"
             width={164}
             height={164}
+            quality={100}
           />
           <h2 className={st.subtitle}>Why is KYC Required?</h2>
           <div className={st.ellipse} />

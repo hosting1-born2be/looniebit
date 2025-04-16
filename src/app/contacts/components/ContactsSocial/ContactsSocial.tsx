@@ -63,6 +63,7 @@ export default function ContactsSocial() {
           width={1110}
           height={300}
           className={styles.image}
+          quality={100}
         />
         <Image
           src="/images/contacts/socialMob.png"
@@ -70,6 +71,7 @@ export default function ContactsSocial() {
           width={1110}
           height={300}
           className={styles.imageMob}
+          quality={100}
         />
       </motion.div>
     </div>

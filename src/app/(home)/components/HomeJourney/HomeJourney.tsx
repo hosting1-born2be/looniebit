@@ -47,6 +47,7 @@ export default function HomeJourney() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Secure Exchanges</h3>
                 <p>
@@ -70,6 +71,7 @@ export default function HomeJourney() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Personalized Data Protection</h3>
                 <p>
@@ -93,6 +95,7 @@ export default function HomeJourney() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>KYC Verification</h3>
                 <p>
@@ -116,6 +119,7 @@ export default function HomeJourney() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Compliance with Industry Standards</h3>
                 <p>
@@ -139,6 +143,7 @@ export default function HomeJourney() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Expert Customer Support</h3>
                 <p>

@@ -14,7 +14,13 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
         <Link href={'/'}>
-          <Image src="/images/logo.svg" alt="logo" width={111} height={21} />
+          <Image
+            src="/images/logo.svg"
+            alt="logo"
+            width={111}
+            height={21}
+            quality={100}
+          />
         </Link>
         <div className={styles.footerContentWrapper}>
           <div className={styles.footerContentWrapperItem}>
@@ -73,7 +79,13 @@ export default function Footer() {
         <div>
           <p>© {new Date().getFullYear()} All rights reserved</p>
         </div>
-        <Image src="/images/visa.svg" alt="visa" width={134} height={36} />
+        <Image
+          src="/images/visa.svg"
+          alt="visa"
+          width={134}
+          height={36}
+          quality={100}
+        />
       </div>
     </footer>
   );

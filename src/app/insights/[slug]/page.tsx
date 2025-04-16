@@ -62,6 +62,7 @@ export default async function InsightPage({
                   className={styles.image}
                   width={940}
                   height={350}
+                  quality={100}
                 />
               </div>
             )}

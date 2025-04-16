@@ -44,6 +44,7 @@ export default function CompanyValues() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Security First</h3>
                 <p>
@@ -64,6 +65,7 @@ export default function CompanyValues() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Customer-Centric</h3>
                 <p>
@@ -84,6 +86,7 @@ export default function CompanyValues() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Transparency</h3>
                 <p>
@@ -104,6 +107,7 @@ export default function CompanyValues() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Compliance & Trust</h3>
                 <p>
@@ -126,6 +130,7 @@ export default function CompanyValues() {
               width={1110}
               height={300}
               className={styles.image}
+              quality={100}
             />
             <Image
               src="/images/company/valueMob.png"
@@ -133,6 +138,7 @@ export default function CompanyValues() {
               width={1110}
               height={300}
               className={styles.imageMobile}
+              quality={100}
             />
           </motion.div>
         </div>

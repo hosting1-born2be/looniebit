@@ -28,6 +28,7 @@ export default function InsightCard({ insight }: { insight: Insight }) {
               alt={insight.title}
               width={555}
               height={212}
+              quality={100}
             />
           </Link>
           <div className={styles.insightCardContent}>

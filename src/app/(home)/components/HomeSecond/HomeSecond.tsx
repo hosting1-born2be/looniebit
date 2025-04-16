@@ -40,6 +40,7 @@ export default function HomeSecond() {
             width={1110}
             height={300}
             className={styles.homeSecondContentImage}
+            quality={100}
           />
           <Image
             src="/images/home/homeSecondMob.png"
@@ -47,6 +48,7 @@ export default function HomeSecond() {
             width={1110}
             height={300}
             className={styles.homeSecondContentImageMobile}
+            quality={100}
           />
           <div className={styles.homeSecondContentRow}>
             <div>

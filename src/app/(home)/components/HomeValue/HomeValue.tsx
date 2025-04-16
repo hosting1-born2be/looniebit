@@ -29,6 +29,7 @@ export default function HomeValue() {
             width={1110}
             height={150}
             className={styles.homeValueBack}
+            quality={100}
           />
           <Image
             src="/images/home/valueBackMob.svg"
@@ -36,6 +37,7 @@ export default function HomeValue() {
             width={1110}
             height={100}
             className={styles.homeValueBackMobile}
+            quality={100}
           />
           <div className={styles.homeValueContentRow}>
             <div>
@@ -50,6 +52,7 @@ export default function HomeValue() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Uncompromising Security</h3>
                 <p>
@@ -72,6 +75,7 @@ export default function HomeValue() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Seamless Experience</h3>
                 <p>
@@ -93,6 +97,7 @@ export default function HomeValue() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Absolute Transparency</h3>
                 <p>
@@ -113,6 +118,7 @@ export default function HomeValue() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Excellence in Customer Support</h3>
                 <p>
