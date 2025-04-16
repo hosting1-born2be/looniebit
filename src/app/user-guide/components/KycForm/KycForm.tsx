@@ -26,6 +26,7 @@ export function KycForm() {
               alt="sphere"
               width={256}
               height={185}
+              quality={100}
             />
           </section>
           <section className={st.form}>
@@ -40,6 +41,7 @@ export function KycForm() {
               alt="sphere"
               width={242}
               height={194}
+              quality={100}
             />
           </section>
         </section>

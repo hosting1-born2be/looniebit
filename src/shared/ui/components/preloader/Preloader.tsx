@@ -46,6 +46,7 @@ const Preloader: React.FC = () => {
         alt="preloader"
         width={101}
         height={101}
+        quality={100}
       />
     </div>
   );

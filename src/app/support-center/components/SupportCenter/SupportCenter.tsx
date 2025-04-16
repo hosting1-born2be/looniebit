@@ -51,6 +51,7 @@ export default function SupportCenter() {
                     alt="why"
                     width={48}
                     height={48}
+                    quality={100}
                   />
                   <h3>Submit a Ticket</h3>
                   <p>
@@ -78,6 +79,7 @@ export default function SupportCenter() {
                     alt="why"
                     width={48}
                     height={48}
+                    quality={100}
                   />
                   <h3>Track a Ticket</h3>
                   <p>

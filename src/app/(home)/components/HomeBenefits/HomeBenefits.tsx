@@ -30,6 +30,7 @@ export default function HomeBenefits() {
               alt="value"
               width={555}
               height={691}
+              quality={100}
             />
           </div>
 
@@ -46,6 +47,7 @@ export default function HomeBenefits() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Limitless Crypto Exchanges</h3>
                 <p>
@@ -67,6 +69,7 @@ export default function HomeBenefits() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Instant Transactions</h3>
                 <p>
@@ -88,6 +91,7 @@ export default function HomeBenefits() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Global Access</h3>
                 <p>
@@ -109,6 +113,7 @@ export default function HomeBenefits() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Wide Variety of Cryptocurrencies</h3>
                 <p>

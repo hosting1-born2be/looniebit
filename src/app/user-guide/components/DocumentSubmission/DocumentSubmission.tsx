@@ -39,6 +39,7 @@ export function DocumentSubmission() {
           alt="sphere"
           width={187}
           height={189}
+          quality={100}
         />
         <section className={st.tableRow}>
           <h3 className={st.level}>Level 1</h3>

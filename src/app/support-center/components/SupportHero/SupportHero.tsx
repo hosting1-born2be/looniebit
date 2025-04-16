@@ -46,6 +46,7 @@ export default function SupportHero() {
           width={727}
           height={541}
           alt="hero2"
+          quality={100}
         />
       </div>
     </section>

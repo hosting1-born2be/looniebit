@@ -46,6 +46,7 @@ export default function HomeWhy() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Top-Level Security</h3>
                 <p>
@@ -67,6 +68,7 @@ export default function HomeWhy() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Clear and Transparent Fees</h3>
                 <p>
@@ -88,6 +90,7 @@ export default function HomeWhy() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>User-Friendly Experience</h3>
                 <p>
@@ -110,6 +113,7 @@ export default function HomeWhy() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>24/7 Customer Support</h3>
                 <p>

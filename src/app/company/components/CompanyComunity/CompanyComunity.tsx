@@ -38,6 +38,7 @@ export default function CompanyComunity() {
               alt="value"
               width={555}
               height={417}
+              quality={100}
             />
           </div>
 
@@ -54,6 +55,7 @@ export default function CompanyComunity() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Educational Resources</h3>
                 <p>
@@ -74,6 +76,7 @@ export default function CompanyComunity() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Customer Support</h3>
                 <p>
@@ -94,6 +97,7 @@ export default function CompanyComunity() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Feedback-Driven Growth</h3>
                 <p>

@@ -44,6 +44,7 @@ export default function CompanyServices() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Buy and Sell Cryptocurrencies</h3>
                 <p>
@@ -64,6 +65,7 @@ export default function CompanyServices() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Instant Transactions</h3>
                 <p>
@@ -84,6 +86,7 @@ export default function CompanyServices() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Secure Wallet Solutions</h3>
                 <p>
@@ -104,6 +107,7 @@ export default function CompanyServices() {
                   alt="why"
                   width={48}
                   height={48}
+                  quality={100}
                 />
                 <h3>Global Accessibility</h3>
                 <p>
