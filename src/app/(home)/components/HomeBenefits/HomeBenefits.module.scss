@@ -2,6 +2,7 @@
   padding: 165px 0;
   position: relative;
   border-bottom: 1px solid #242424;
+  background-color: #101010;
   @media (max-width: 992px) {
     padding: 65px 0;
   }
@@ -54,6 +55,8 @@
         }
       }
       img {
+        width: 100%;
+        height: auto;
         @media (max-width: 992px) {
           width: 100%;
           height: auto;

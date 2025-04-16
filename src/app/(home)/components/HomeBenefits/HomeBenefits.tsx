@@ -26,7 +26,7 @@ export default function HomeBenefits() {
               </motion.h2>
             </div>
             <Image
-              src="/images/home/benefit.png"
+              src="/images/home/benefit.webp"
               alt="value"
               width={555}
               height={691}

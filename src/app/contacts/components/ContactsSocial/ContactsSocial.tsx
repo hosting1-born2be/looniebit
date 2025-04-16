@@ -58,7 +58,7 @@ export default function ContactsSocial() {
         className={styles.images}
       >
         <Image
-          src="/images/contacts/social.png"
+          src="/images/contacts/social.webp"
           alt="contactsSocial"
           width={1110}
           height={300}

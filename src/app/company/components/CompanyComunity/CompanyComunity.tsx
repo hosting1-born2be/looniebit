@@ -34,7 +34,7 @@ export default function CompanyComunity() {
               </motion.p>
             </div>
             <Image
-              src="/images/company/comunity.png"
+              src="/images/company/comunity.webp"
               alt="value"
               width={555}
               height={417}
