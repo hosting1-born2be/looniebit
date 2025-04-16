@@ -44,8 +44,8 @@ const Preloader: React.FC = () => {
       <Image
         src="/images/preloader.gif"
         alt="preloader"
-        width={100}
-        height={100}
+        width={101}
+        height={101}
       />
     </div>
   );
