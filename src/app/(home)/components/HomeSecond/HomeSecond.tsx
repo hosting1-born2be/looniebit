@@ -59,9 +59,9 @@ export default function HomeSecond() {
                 variants={fadeInUp}
               >
                 <span>01</span>
-                <h3>Sign Up and Verify Your Account</h3>
+                <h3>Sign Up and Verify Your Profile</h3>
                 <p>
-                  Register for an account easily. Once signed up, verify your
+                  Register for an profile easily. Once signed up, verify your
                   email to complete the initial step toward joining the
                   LoonieBit community.
                 </p>
@@ -75,7 +75,7 @@ export default function HomeSecond() {
                 variants={fadeInUp}
               >
                 <span>02</span>
-                <h3>Complete the Account Verification</h3>
+                <h3>Complete the Profile Verification</h3>
                 <p>
                   Complete our straightforward verification process for your
                   security. This step helps us ensure the integrity of our
@@ -93,7 +93,7 @@ export default function HomeSecond() {
                 <span>03</span>
                 <h3>Start Exchanging Without Limits</h3>
                 <p>
-                  Once your account is verified, you can exchange
+                  Once your profile is verified, you can exchange
                   cryptocurrencies without restrictions. Enjoy quick, secure,
                   and seamless crypto exchanges with just a few clicks
                 </p>
@@ -108,7 +108,7 @@ export default function HomeSecond() {
             className={styles.button}
           >
             <Button url={LINKS.SIGN_UP} type="link">
-              Create Your Account Now
+              Create Your Profile Now
             </Button>
           </motion.div>
         </div>

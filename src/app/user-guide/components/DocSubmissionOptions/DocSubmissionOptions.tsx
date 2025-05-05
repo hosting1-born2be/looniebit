@@ -16,10 +16,10 @@ export function DocSubmissionOptions() {
           <section className={st.formContent}>
             <div className={st.formTitleLayout}>
               <span className={st.num}>01</span>
-              <h5 className={st.formTitle}>Upload via your account:</h5>
+              <h5 className={st.formTitle}>Upload via your profile:</h5>
             </div>
             <p className={st.formText}>
-              Simply use the “Upload Documents” option in your account
+              Simply use the “Upload Documents” option in your profile
               dashboard.
             </p>
           </section>

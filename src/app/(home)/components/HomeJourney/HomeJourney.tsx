@@ -177,7 +177,7 @@ export default function HomeJourney() {
                 </p>
               </div>
               <Button url={LINKS.SIGN_UP} type="link">
-                Create an Account and Start Exchanging!
+                Create an Profile and Start Exchanging!
               </Button>
             </div>
             <div className={styles.readyToStartImage}></div>

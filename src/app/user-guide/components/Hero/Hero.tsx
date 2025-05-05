@@ -43,7 +43,7 @@ export function Hero() {
           providing all users with a secure and compliant environment. Our Know
           Your Customer (KYC) procedure is critical to our security measures,
           helping us prevent fraud and criminal activities while safeguarding
-          your account. By following KYC protocols, we protect your personal
+          your profile. By following KYC protocols, we protect your personal
           information and the integrity of our platform. <br />
           <br /> We require specific documents based on your activity level to
           verify your identity and ensure secure exchanges. The documents vary
