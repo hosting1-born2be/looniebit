@@ -58,7 +58,7 @@ export default function SupportCenter() {
                     Need personalized help? Submit a support ticket to our
                     expert team. Just fill out the form below, and one of our
                     team members will reply promptly. We’re here to assist with
-                    anything from account issues to technical questions.
+                    anything from profile issues to technical questions.
                   </p>
                 </div>
                 <Button url={LINKS.SUPPORT} type="link">

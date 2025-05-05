@@ -35,7 +35,7 @@ export default function SupportHero() {
           >
             Our dedicated team is here to provide you the help and guidance you
             need. Whether you have a question or an issue or need assistance
-            with your account, we’re here to ensure you have the best experience
+            with your profile, we’re here to ensure you have the best experience
             possible.
           </motion.p>
         </div>

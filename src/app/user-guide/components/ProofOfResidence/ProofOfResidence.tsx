@@ -120,7 +120,7 @@ export function ProofOfResidence() {
             <li>The document should include both sides.</li>
             <li>
               The name and address should match the information provided in your
-              account.
+              profile.
             </li>
           </ul>
         </section>

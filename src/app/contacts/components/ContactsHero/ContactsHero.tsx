@@ -36,7 +36,7 @@ export default function ContactsHero() {
         variants={fadeInUp}
       >
         Don’t hesitate to get in touch if you have questions about our services,
-        need assistance with your account, or want to learn more about
+        need assistance with your profile, or want to learn more about
         LoonieBit.
       </motion.p>
     </div>
