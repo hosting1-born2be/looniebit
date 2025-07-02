@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 import Footer from '@/shared/ui/components/footer/Footer';
 import Header from '@/shared/ui/components/header/Header';
@@ -33,6 +34,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleAnalytics gaId="G-XM5ZSK54ZR" />
       <body className={`${roboto.variable}`}>
         <Preloader />
         <Header />
