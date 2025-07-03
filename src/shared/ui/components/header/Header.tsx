@@ -8,7 +8,7 @@ import { LINKS, WEBSITE_EMAIL } from '@/shared/lib/constants/constants';
 import Burger from '../../icons/burger/burger';
 import Facebook from '../../icons/socials/Facebook';
 import Instagram from '../../icons/socials/Instagram';
-import Youtube from '../../icons/socials/Youtube';
+import X from '../../icons/socials/X';
 import CryptoTicker from '../cryptoTicker/cryptoTicker';
 import styles from './header.module.scss';
 
@@ -35,14 +35,14 @@ export default function Header() {
             <Link href={`mailto:${WEBSITE_EMAIL}`}>{WEBSITE_EMAIL}</Link>
           </div>
           <div className={styles.headerTopSocials}>
-            <Link href={LINKS.YOUTUBE} target="_blank">
-              <Youtube />
-            </Link>
             <Link href={LINKS.FACEBOOK} target="_blank">
               <Facebook />
             </Link>
             <Link href={LINKS.INSTAGRAM} target="_blank">
               <Instagram />
+            </Link>
+            <Link href={LINKS.X} target="_blank">
+              <X />
             </Link>
           </div>
         </div>
@@ -92,14 +92,14 @@ export default function Header() {
           <Link href="/contacts">Contacts</Link>
         </nav>
         <div className={styles.socials}>
-          <Link href={LINKS.YOUTUBE} target="_blank">
-            <Youtube />
-          </Link>
           <Link href={LINKS.FACEBOOK} target="_blank">
             <Facebook />
           </Link>
           <Link href={LINKS.INSTAGRAM} target="_blank">
             <Instagram />
+          </Link>
+          <Link href={LINKS.X} target="_blank">
+            <X />
           </Link>
         </div>
       </div>

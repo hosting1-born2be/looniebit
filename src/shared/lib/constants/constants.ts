@@ -7,7 +7,7 @@ export const LINKS = {
   SIGN_UP: 'https://exchange.looniebit.com/register',
   SUPPORT: 'https://ticket.looniebit.com/en',
   FAQ: 'https://ticket.looniebit.com/en/knowledgebase',
-  FACEBOOK: '#',
-  INSTAGRAM: '#',
-  YOUTUBE: '#',
+  FACEBOOK: 'https://www.facebook.com/looniebit ',
+  INSTAGRAM: 'https://www.instagram.com/looniebit/',
+  X: 'https://x.com/LonieBit',
 };
