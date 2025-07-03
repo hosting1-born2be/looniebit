@@ -6,7 +6,7 @@ import { LINKS, WEBSITE_EMAIL } from '@/shared/lib/constants/constants';
 
 import Facebook from '../../icons/socials/Facebook';
 import Instagram from '../../icons/socials/Instagram';
-import Youtube from '../../icons/socials/Youtube';
+import X from '../../icons/socials/X';
 import styles from './footer.module.scss';
 
 export default function Footer() {
@@ -26,10 +26,6 @@ export default function Footer() {
           <div className={styles.footerContentWrapperItem}>
             <h3>Stay Social</h3>
             <nav>
-              <Link href={LINKS.YOUTUBE} target="_blank">
-                <Youtube />
-                YouTube
-              </Link>
               <Link href={LINKS.FACEBOOK} target="_blank">
                 <Facebook />
                 Facebook
@@ -37,6 +33,10 @@ export default function Footer() {
               <Link href={LINKS.INSTAGRAM} target="_blank">
                 <Instagram />
                 Instagram
+              </Link>
+              <Link href={LINKS.X} target="_blank">
+                <X />
+                Twitter
               </Link>
             </nav>
           </div>

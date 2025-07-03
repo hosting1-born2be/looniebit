@@ -7,7 +7,7 @@ import { LINKS } from '@/shared/lib/constants/constants';
 import { fadeInUp } from '@/shared/lib/helpers/animations';
 import Facebook from '@/shared/ui/icons/socials/Facebook';
 import Instagram from '@/shared/ui/icons/socials/Instagram';
-import Youtube from '@/shared/ui/icons/socials/Youtube';
+import X from '@/shared/ui/icons/socials/X';
 
 import styles from "../ContactsWrap/ContactsWrap.module.scss";
 
@@ -39,14 +39,15 @@ export default function ContactsSocial() {
           variants={fadeInUp}
           className={styles.socials}
         >
-          <Link href={LINKS.YOUTUBE} target="_blank">
-            <Youtube /> YouTube
-          </Link>
+          
           <Link href={LINKS.FACEBOOK} target="_blank">
             <Facebook /> Facebook
           </Link>
           <Link href={LINKS.INSTAGRAM} target="_blank">
             <Instagram /> Instagram
+          </Link>
+          <Link href={LINKS.X} target="_blank">
+            <X /> Twitter
           </Link>
         </motion.div>
       </div>
