@@ -61,7 +61,7 @@ export default function SupportCenter() {
                     anything from profile issues to technical questions.
                   </p>
                 </div>
-                <Button url={LINKS.SUPPORT} type="link">
+                <Button url={LINKS.SUPPORT} type="link" target="_blank">
                   Submit Your Ticket
                 </Button>
               </motion.div>
@@ -89,7 +89,7 @@ export default function SupportCenter() {
                     resolution of your issue.
                   </p>
                 </div>
-                <Button url={LINKS.SUPPORT} type="link">
+                <Button url={LINKS.SUPPORT} type="link" target="_blank">
                   Track Your Ticket
                 </Button>
               </motion.div>
