@@ -54,7 +54,7 @@ export default function SupportCenter() {
                     quality={100}
                   />
                   <h3>Submit a Ticket</h3>
-                  <p>
+                  <p className={styles.supportCenterContentText}>
                     Need personalized help? Submit a support ticket to our
                     expert team. Just fill out the form below, and one of our
                     team members will reply promptly. We’re here to assist with
