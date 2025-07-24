@@ -54,14 +54,14 @@ export default function SupportCenter() {
                     quality={100}
                   />
                   <h3>Submit a Ticket</h3>
-                  <p>
+                  <p className={styles.supportCenterContentText}>
                     Need personalized help? Submit a support ticket to our
                     expert team. Just fill out the form below, and one of our
                     team members will reply promptly. We’re here to assist with
                     anything from profile issues to technical questions.
                   </p>
                 </div>
-                <Button url={LINKS.SUPPORT} type="link">
+                <Button url={LINKS.SUPPORT} type="link" target="_blank">
                   Submit Your Ticket
                 </Button>
               </motion.div>
@@ -89,7 +89,7 @@ export default function SupportCenter() {
                     resolution of your issue.
                   </p>
                 </div>
-                <Button url={LINKS.SUPPORT} type="link">
+                <Button url={LINKS.SUPPORT} type="link" target="_blank">
                   Track Your Ticket
                 </Button>
               </motion.div>
