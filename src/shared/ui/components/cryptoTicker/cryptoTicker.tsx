@@ -13,7 +13,19 @@ type Crypto = {
 const CRYPTO_LIST: Crypto[] = [
   { id: 'BTCUSDT', symbol: 'BTC', name: 'Bitcoin' },
   { id: 'ETHUSDT', symbol: 'ETH', name: 'Ethereum' },
-  { id: 'SOLUSDT', symbol: 'SOL', name: 'Solana' },
+  { id: 'BTCUSDT', symbol: 'BTC', name: 'Bitcoin' },
+  { id: 'ETHUSDT', symbol: 'ETH', name: 'Ethereum' },
+  { id: 'BTCUSDT', symbol: 'BTC', name: 'Bitcoin' },
+  { id: 'ETHUSDT', symbol: 'ETH', name: 'Ethereum' },
+  { id: 'BTCUSDT', symbol: 'BTC', name: 'Bitcoin' },
+  { id: 'ETHUSDT', symbol: 'ETH', name: 'Ethereum' },
+  { id: 'BTCUSDT', symbol: 'BTC', name: 'Bitcoin' },
+  { id: 'ETHUSDT', symbol: 'ETH', name: 'Ethereum' },
+  { id: 'BTCUSDT', symbol: 'BTC', name: 'Bitcoin' },
+  { id: 'ETHUSDT', symbol: 'ETH', name: 'Ethereum' },
+  { id: 'BTCUSDT', symbol: 'BTC', name: 'Bitcoin' },
+  { id: 'ETHUSDT', symbol: 'ETH', name: 'Ethereum' },
+  /*{ id: 'SOLUSDT', symbol: 'SOL', name: 'Solana' },
   { id: 'ADAUSDT', symbol: 'ADA', name: 'Cardano' },
   { id: 'XRPUSDT', symbol: 'XRP', name: 'Ripple' },
   { id: 'DOTUSDT', symbol: 'DOT', name: 'Polkadot' },
@@ -25,7 +37,7 @@ const CRYPTO_LIST: Crypto[] = [
   { id: 'LTCUSDT', symbol: 'LTC', name: 'Litecoin' },
   { id: 'UNIUSDT', symbol: 'UNI', name: 'Uniswap' },
   { id: 'XMRUSDT', symbol: 'XMR', name: 'Monero' },
-  { id: 'XLMUSDT', symbol: 'XLM', name: 'Stellar' },
+  { id: 'XLMUSDT', symbol: 'XLM', name: 'Stellar' },*/
 ];
 
 type PriceDetails = {
