@@ -35,15 +35,21 @@ export default function Header() {
             <Link href={`mailto:${WEBSITE_EMAIL}`}>{WEBSITE_EMAIL}</Link>
           </div>
           <div className={styles.headerTopSocials}>
-            <Link href={LINKS.FACEBOOK} target="_blank">
-              <Facebook />
-            </Link>
-            <Link href={LINKS.INSTAGRAM} target="_blank">
-              <Instagram />
-            </Link>
-            <Link href={LINKS.X} target="_blank">
-              <X />
-            </Link>
+            {LINKS.FACEBOOK && (
+              <Link href={LINKS.FACEBOOK} target="_blank">
+                <Facebook />
+              </Link>
+            )}
+            {LINKS.INSTAGRAM && (
+              <Link href={LINKS.INSTAGRAM} target="_blank">
+                <Instagram />
+              </Link>
+            )}
+            {LINKS.X && (
+              <Link href={LINKS.X} target="_blank">
+                <X />
+              </Link>
+            )}
           </div>
         </div>
         <div className={styles.headerMain}>
@@ -92,15 +98,21 @@ export default function Header() {
           <Link href="/contacts">Contacts</Link>
         </nav>
         <div className={styles.socials}>
-          <Link href={LINKS.FACEBOOK} target="_blank">
-            <Facebook />
-          </Link>
-          <Link href={LINKS.INSTAGRAM} target="_blank">
-            <Instagram />
-          </Link>
-          <Link href={LINKS.X} target="_blank">
-            <X />
-          </Link>
+          {LINKS.FACEBOOK && (
+            <Link href={LINKS.FACEBOOK} target="_blank">
+              <Facebook />
+            </Link>
+          )}
+          {LINKS.INSTAGRAM && (
+            <Link href={LINKS.INSTAGRAM} target="_blank">
+              <Instagram />
+            </Link>
+          )}
+          {LINKS.X && (
+            <Link href={LINKS.X} target="_blank">
+              <X />
+            </Link>
+          )}
         </div>
       </div>
     </>
