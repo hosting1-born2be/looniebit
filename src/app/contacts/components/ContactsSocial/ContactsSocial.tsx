@@ -1,7 +1,7 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 
 import { LINKS } from '@/shared/lib/constants/constants';
 import { fadeInUp } from '@/shared/lib/helpers/animations';
@@ -9,7 +9,7 @@ import Facebook from '@/shared/ui/icons/socials/Facebook';
 import Instagram from '@/shared/ui/icons/socials/Instagram';
 import X from '@/shared/ui/icons/socials/X';
 
-import styles from "../ContactsWrap/ContactsWrap.module.scss";
+import styles from '../ContactsWrap/ContactsWrap.module.scss';
 
 export default function ContactsSocial() {
   return (
@@ -39,16 +39,21 @@ export default function ContactsSocial() {
           variants={fadeInUp}
           className={styles.socials}
         >
-          
-          <Link href={LINKS.FACEBOOK} target="_blank">
-            <Facebook /> Facebook
-          </Link>
-          <Link href={LINKS.INSTAGRAM} target="_blank">
-            <Instagram /> Instagram
-          </Link>
-          <Link href={LINKS.X} target="_blank">
-            <X /> Twitter
-          </Link>
+          {LINKS.FACEBOOK && (
+            <Link href={LINKS.FACEBOOK} target="_blank">
+              <Facebook /> Facebook
+            </Link>
+          )}
+          {LINKS.INSTAGRAM && (
+            <Link href={LINKS.INSTAGRAM} target="_blank">
+              <Instagram /> Instagram
+            </Link>
+          )}
+          {LINKS.X && (
+            <Link href={LINKS.X} target="_blank">
+              <X /> Twitter
+            </Link>
+          )}
         </motion.div>
       </div>
       <motion.div

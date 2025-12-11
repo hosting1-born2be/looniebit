@@ -26,18 +26,24 @@ export default function Footer() {
           <div className={styles.footerContentWrapperItem}>
             <h3>Stay Social</h3>
             <nav>
-              <Link href={LINKS.FACEBOOK} target="_blank">
-                <Facebook />
-                Facebook
-              </Link>
-              <Link href={LINKS.INSTAGRAM} target="_blank">
-                <Instagram />
-                Instagram
-              </Link>
-              <Link href={LINKS.X} target="_blank">
-                <X />
-                Twitter
-              </Link>
+              {LINKS.FACEBOOK && (
+                <Link href={LINKS.FACEBOOK} target="_blank">
+                  <Facebook />
+                  Facebook
+                </Link>
+              )}
+              {LINKS.INSTAGRAM && (
+                <Link href={LINKS.INSTAGRAM} target="_blank">
+                  <Instagram />
+                  Instagram
+                </Link>
+              )}
+              {LINKS.X && (
+                <Link href={LINKS.X} target="_blank">
+                  <X />
+                  Twitter
+                </Link>
+              )}
             </nav>
           </div>
           <div className={styles.footerContentWrapperItem}>
