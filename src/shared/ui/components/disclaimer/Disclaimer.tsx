@@ -1,25 +1,10 @@
 'use client';
-import { useEffect, useState } from 'react';
 
 import styles from './Disclaimer.module.scss';
 
 export const Disclaimer = () => {
-  const [isClosed, setIsClosed] = useState(false);
-
-  const toggleDisclaimer = () => {
-    sessionStorage.setItem('disclaimer-closed', 'true');
-    setIsClosed(true);
-  };
-
-  useEffect(() => {
-    const disclaimerClosed = sessionStorage.getItem('disclaimer-closed');
-    if (disclaimerClosed === 'true') {
-      setIsClosed(true);
-    }
-  }, []);
-
   return (
-    <div className={`${styles.disclaimer} ${isClosed ? styles.closed : ''}`}>
+    <div className={styles.disclaimer}>
       <div className={styles.disclaimerContent}>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +25,6 @@ export const Disclaimer = () => {
           From 1 January 2026, Clearcrest Inc. UAB will cease the provision of
           crypto-asset services to clients within the European Union.
         </p>
-        
       </div>
     </div>
   );
