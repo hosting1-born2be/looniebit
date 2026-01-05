@@ -13,15 +13,23 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.footerContent}>
-        <Link href={'/'}>
-          <Image
-            src="/images/logo.svg"
-            alt="logo"
-            width={111}
-            height={21}
-            quality={100}
-          />
-        </Link>
+        <div className={styles.footerLogo}>
+          <Link href={'/'}>
+            <Image
+              src="/images/logo.svg"
+              alt="logo"
+              width={111}
+              height={21}
+              quality={100}
+            />
+          </Link>
+          <p>
+            KRS number: 1101442
+          </p>
+          <p>
+            Address: HOŻA Street No. 86, 210 spaces. WARSAW postal code 00-682
+          </p>
+        </div>
         <div className={styles.footerContentWrapper}>
           <div className={styles.footerContentWrapperItem}>
             <h3>Stay Social</h3>

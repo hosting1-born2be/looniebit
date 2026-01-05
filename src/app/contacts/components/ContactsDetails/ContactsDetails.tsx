@@ -1,16 +1,39 @@
-"use client";
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
+'use client';
+import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
 
-import { WEBSITE_EMAIL } from "@/shared/lib/constants/constants";
-import { fadeInUp } from "@/shared/lib/helpers/animations";
+import { WEBSITE_EMAIL } from '@/shared/lib/constants/constants';
+import { fadeInUp } from '@/shared/lib/helpers/animations';
 
-import styles from "../ContactsWrap/ContactsWrap.module.scss";
+import styles from '../ContactsWrap/ContactsWrap.module.scss';
 
 export default function ContactsDetails() {
   return (
     <div className={styles.contactsDetailsContent}>
+      <div className={styles.item}>
+        <motion.div
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          variants={fadeInUp}
+        >
+          <h2>Our Registered Office</h2>
+          <p>For official correspondence, please use our registered address:</p>
+          <Link href="#" className={styles.address}>
+            <Image
+              src="/images/contacts/location.svg"
+              alt="map"
+              width={20}
+              height={20}
+              quality={100}
+            />
+            <span>
+              HOŻA Street No. 86, 210 spaces. WARSAW postal code 00-682
+            </span>
+          </Link>
+        </motion.div>
+      </div>
       <div className={styles.item}>
         <motion.div
           initial="hidden"
