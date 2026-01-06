@@ -23,12 +23,6 @@ export default function Footer() {
               quality={100}
             />
           </Link>
-          <p>
-            KRS number: 1101442
-          </p>
-          <p>
-            Address: HOŻA Street No. 86, 210 spaces. WARSAW postal code 00-682
-          </p>
         </div>
         <div className={styles.footerContentWrapper}>
           <div className={styles.footerContentWrapperItem}>

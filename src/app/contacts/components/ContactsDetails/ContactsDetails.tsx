@@ -29,7 +29,7 @@ export default function ContactsDetails() {
               quality={100}
             />
             <span>
-              HOŻA Street No. 86, 210 spaces. WARSAW postal code 00-682
+            Lviv st. 21A, LT-09313, Vilnius, Lithuania
             </span>
           </Link>
         </motion.div>
