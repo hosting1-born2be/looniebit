@@ -22,7 +22,7 @@ export const Disclaimer = () => {
           />
         </svg>
         <p className={styles.disclaimerText}>
-          From 1 January 2026, Monteris Sp. z o.o. will cease the provision of
+          From 1 January 2026, Clearcrest Inc. UAB will cease the provision of
           crypto-asset services to clients within the European Union.
         </p>
       </div>
