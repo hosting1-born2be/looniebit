@@ -29,7 +29,7 @@ export default function ContactsDetails() {
               quality={100}
             />
             <span>
-            Lviv st. 21A, LT-09313, Vilnius, Lithuania
+            Lvivo st. 21A, LT-09313, Vilnius, Lithuania
             </span>
           </Link>
         </motion.div>
