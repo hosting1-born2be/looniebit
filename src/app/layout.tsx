@@ -5,6 +5,7 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import Footer from '@/shared/ui/components/footer/Footer';
 import Header from '@/shared/ui/components/header/Header';
 import Preloader from '@/shared/ui/components/preloader/Preloader';
+import { CriticalAlert } from '@/shared/ui/components/criticalAlert/CriticalAlert';
 
 import '@/shared/lib/styles/base.scss';
 import '@/shared/lib/styles/mixin.scss';
@@ -37,6 +38,7 @@ export default function RootLayout({
       <GoogleAnalytics gaId="G-XM5ZSK54ZR" />
       <body className={`${roboto.variable}`}>
         <Preloader />
+        <CriticalAlert />
         <Header />
         <main>{children}</main>
         <Footer />
