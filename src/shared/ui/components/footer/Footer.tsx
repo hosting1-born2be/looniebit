@@ -60,28 +60,44 @@ export default function Footer() {
             </nav>
           </div>
           <div className={styles.footerContentWrapperItem}>
-            <h3>Guidelines</h3>
+            <h3>Clearcrest Inc. UAB</h3>
             <nav>
-              <Link href="/legal/terms-and-conditions">
-                Terms and Conditions
-              </Link>
-              <Link href="/legal/privacy-policy">Privacy Policy</Link>
-              <Link href="/legal/cookie-policy">Cookie Policy</Link>
-              <Link href="/legal/refund-policy">Refund Policy</Link>
-              <Link href="/legal/disclaimer">Disclaimer</Link>
-              <Link href="/legal/aml-policy">AML Policy</Link>
-              <Link href="/legal/complaints-procedure">
-                Complaints Procedure
-              </Link>
+              <Link href="/legal/terms-conditions-2">Terms & Conditions</Link>
+              <Link href="/legal/refund-policy">Refund policy</Link>
+              <Link href="/legal/privacy-policy-2">Privacy policy</Link>
+              <Link href="/legal/disclaimer">Risks Disclosure</Link>
+              <Link href="/legal/aml-kyc-policy-2">AML policy</Link>
+              <Link href="/legal/complaints-procedure-2">Complaints Procedure</Link>
+              <Link href="/legal/legal-disclosure">Legal Disclosure</Link>
+            </nav>
+          </div>
+          <div className={styles.footerContentWrapperItem}>
+            <h3>Monteris Sp. z o.o.</h3>
+            <nav>
+              <Link href="/legal/terms-conditions-1">Terms & Conditions</Link>
+              <Link href="/legal/refund-policy">Refund policy</Link>
+              <Link href="/legal/privacy-policy-1">Privacy policy</Link>
+              <Link href="/legal/disclaimer">Risks Disclosure</Link>
+              <Link href="/legal/aml-kyc-policy-1">AML policy</Link>
+              <Link href="/legal/complaints-procedure-1">Complaints Procedure</Link>
+              <Link href="/legal/legal-disclosure">Legal Disclosure</Link>
             </nav>
           </div>
           <div className={styles.footerContentWrapperItem}>
             <h3>Reach Out to Us</h3>
             <div className={styles.address}>
               <Link href={`mailto:${WEBSITE_EMAIL}`}>{WEBSITE_EMAIL}</Link>
+              <Link href="tel:+14378869702">+14378869702</Link>
+              <Link href="tel:+37052144957">+37052144957</Link>
+              <Link href="tel:+48699740597">+48699740597</Link>
             </div>
           </div>
         </div>
+      </div>
+      <div className={styles.footerDisclaimer}>
+        <p>
+          This website and its materials have been created and shared with individuals outside the United Kingdom. The information presented here is not aimed at or designed for dissemination to, or utilisation by, any individuals or entities in the UK. The financial products and services discussed on this website are not suitable for use in the UK. In the United Kingdom, cryptoassets are categorised as Restricted Mass Market Investments, signifying their high-risk nature and rendering them unsuitable for most retail investors.
+        </p>
       </div>
       <div className={styles.footerBottom}>
         <div>

@@ -113,6 +113,23 @@
       }
     }
   }
+  .footerDisclaimer { 
+    padding: 24px 16px;
+    border-top: 1px solid #101010;
+    background-color: #161616; 
+
+    p { 
+      max-width: 1312px;
+      margin: 0 auto; 
+      text-align: center;
+      color: #b7b7b7;
+      font-size: 14px;
+      line-height: normal;
+      font-weight: 400;
+      font-family: 'Roboto', sans-serif;
+    }
+
+  }
   .footerBottom {
     display: flex;
     align-items: center;
