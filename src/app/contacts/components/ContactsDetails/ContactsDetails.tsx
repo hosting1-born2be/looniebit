@@ -19,19 +19,24 @@ export default function ContactsDetails() {
           variants={fadeInUp}
         >
           <h2>Our Registered Office</h2>
-          <p>For official correspondence, please use our registered address:</p>
-          <Link href="#" className={styles.address}>
+          <p>You can also reach us by phone for quick inquiries:</p>
+          <div className={styles.address}>
             <Image
-              src="/images/contacts/location.svg"
+              src="/images/contacts/phone.svg"
               alt="map"
               width={20}
               height={20}
               quality={100}
             />
-            <span>
-            Lvivo st. 21A, LT-09313, Vilnius, Lithuania
-            </span>
-          </Link>
+            <ul className={styles.phones}>
+              <li><Link href="tel:+14378869702">+14378869702</Link></li>
+              <span>|</span>
+              <li><Link href="tel:+37052144957">+37052144957</Link></li>
+              <span>|</span>
+              <li><Link href="tel:+48699740597">+48699740597</Link></li>
+            </ul>
+          </div>
+
         </motion.div>
       </div>
       <div className={styles.item}>

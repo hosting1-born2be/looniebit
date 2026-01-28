@@ -154,7 +154,7 @@
           width: 100%;
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: flex-start;
         }
         h2 {
           color: #fff;
@@ -212,6 +212,10 @@
           text-decoration-thickness: auto;
           text-underline-offset: auto;
           text-underline-position: from-font;
+
+          @media(max-width: 767px) { 
+            align-items: flex-start;
+          }
           &:hover {
             text-decoration: none;
           }
@@ -221,6 +225,41 @@
           }
           span {
             width: calc(100% - 26px);
+          }
+
+          .phones { 
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            @media(max-width: 767px) {
+              flex-wrap: wrap;
+              align-items: flex-start;
+              justify-content: flex-start;
+            }
+            span { 
+              font-size: 14px;
+              line-height: normal;
+              color: #242424;
+
+              @media(max-width: 767px) { 
+                display: none !important;
+              }
+            }
+            li { 
+              list-style: none;
+              a { 
+                color: #fff;
+                text-decoration: underline;
+                font-size: 16px;
+                line-height: normal;
+                font-weight: 400;
+                transition: all 0.3s ease 0s;
+
+                &:hover { 
+                  color: #72ffb1;
+                }
+              }
+            }
           }
         }
       }
