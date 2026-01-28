@@ -2,10 +2,10 @@ import type { Metadata } from 'next';
 import { Roboto } from 'next/font/google';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
+import { CriticalAlert } from '@/shared/ui/components/criticalAlert/CriticalAlert';
 import Footer from '@/shared/ui/components/footer/Footer';
 import Header from '@/shared/ui/components/header/Header';
 import Preloader from '@/shared/ui/components/preloader/Preloader';
-import { CriticalAlert } from '@/shared/ui/components/criticalAlert/CriticalAlert';
 
 import '@/shared/lib/styles/base.scss';
 import '@/shared/lib/styles/mixin.scss';
