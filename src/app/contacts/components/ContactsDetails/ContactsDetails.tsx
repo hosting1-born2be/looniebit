@@ -17,7 +17,7 @@ export default function ContactsDetails() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={fadeInUp}
-        >
+        > 
           <h2>Our Registered Office</h2>
           <p>You can also reach us by phone for quick inquiries:</p>
           <div className={styles.address}>
