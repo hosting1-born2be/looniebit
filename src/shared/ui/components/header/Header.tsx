@@ -12,6 +12,7 @@ import X from '../../icons/socials/X';
 import CryptoTicker from '../cryptoTicker/cryptoTicker';
 import { Disclaimer } from '../disclaimer/Disclaimer';
 import styles from './header.module.scss';
+import { Notice } from '../notice/Notice';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -30,11 +31,15 @@ export default function Header() {
 
   return (
     <>
+      <Notice />
       <Disclaimer />
       <header className={styles.header}>
         <div className={styles.headerTop}>
           <div className={styles.headerTopLeft}>
             <Link href={`mailto:${WEBSITE_EMAIL}`}>{WEBSITE_EMAIL}</Link>
+            <Link href="tel:+14378869702">+14378869702</Link>
+            <Link href="tel:+37052144957">+37052144957</Link>
+            <Link href="tel:+48699740597">+48699740597</Link>
           </div>
           <div className={styles.headerTopSocials}>
             {LINKS.FACEBOOK && (
@@ -85,13 +90,12 @@ export default function Header() {
           </div>
         </div>
       </header>
-      <div className={styles.headerContent}>
+      {/* <div className={styles.headerContent}>
         <CryptoTicker />
-      </div>
+      </div> */}
       <div
-        className={`${styles.mobileMenu} ${
-          isMobileMenuOpen ? styles.active : ''
-        }`}
+        className={`${styles.mobileMenu} ${isMobileMenuOpen ? styles.active : ''
+          }`}
       >
         <nav className={styles.headerMainNav}>
           <Link href="/">Home</Link>
