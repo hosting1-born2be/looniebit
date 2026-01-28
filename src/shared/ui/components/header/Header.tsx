@@ -9,10 +9,9 @@ import Burger from '../../icons/burger/burger';
 import Facebook from '../../icons/socials/Facebook';
 import Instagram from '../../icons/socials/Instagram';
 import X from '../../icons/socials/X';
-import CryptoTicker from '../cryptoTicker/cryptoTicker';
 import { Disclaimer } from '../disclaimer/Disclaimer';
-import styles from './header.module.scss';
 import { Notice } from '../notice/Notice';
+import styles from './header.module.scss';
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
