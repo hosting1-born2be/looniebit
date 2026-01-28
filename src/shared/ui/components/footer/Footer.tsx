@@ -62,25 +62,25 @@ export default function Footer() {
           <div className={styles.footerContentWrapperItem}>
             <h3>Clearcrest Inc. UAB</h3>
             <nav>
-              <Link href="/legal/terms-conditions-2">Terms & Conditions</Link>
-              <Link href="/legal/refund-policy">Refund policy</Link>
-              <Link href="/legal/privacy-policy-2">Privacy policy</Link>
-              <Link href="/legal/disclaimer">Risks Disclosure</Link>
-              <Link href="/legal/aml-kyc-policy-2">AML policy</Link>
-              <Link href="/legal/complaints-procedure-2">Complaints Procedure</Link>
-              <Link href="/legal/legal-disclosure">Legal Disclosure</Link>
+              <Link href="/terms-conditions-2">Terms & Conditions</Link>
+              <Link href="/refund-policy">Refund policy</Link>
+              <Link href="/privacy-policy-2">Privacy policy</Link>
+              <Link href="/disclaimer">Risks Disclosure</Link>
+              <Link href="/aml-kyc-policy-2">AML policy</Link>
+              <Link href="/complaints-procedure-2">Complaints Procedure</Link>
+              <Link href="-disclosure">Legal Disclosure</Link>
             </nav>
           </div>
           <div className={styles.footerContentWrapperItem}>
             <h3>Monteris Sp. z o.o.</h3>
             <nav>
-              <Link href="/legal/terms-conditions-1">Terms & Conditions</Link>
-              <Link href="/legal/refund-policy">Refund policy</Link>
-              <Link href="/legal/privacy-policy-1">Privacy policy</Link>
-              <Link href="/legal/disclaimer">Risks Disclosure</Link>
-              <Link href="/legal/aml-kyc-policy-1">AML policy</Link>
-              <Link href="/legal/complaints-procedure-1">Complaints Procedure</Link>
-              <Link href="/legal/legal-disclosure">Legal Disclosure</Link>
+              <Link href="/terms-conditions-1">Terms & Conditions</Link>
+              <Link href="/refund-policy">Refund policy</Link>
+              <Link href="/privacy-policy-1">Privacy policy</Link>
+              <Link href="/disclaimer">Risks Disclosure</Link>
+              <Link href="/aml-kyc-policy-1">AML policy</Link>
+              <Link href="/complaints-procedure-1">Complaints Procedure</Link>
+              <Link href="-disclosure">Legal Disclosure</Link>
             </nav>
           </div>
           <div className={styles.footerContentWrapperItem}>
