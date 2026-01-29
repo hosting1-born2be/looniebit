@@ -23,7 +23,9 @@ export default function Footer() {
               quality={100}
             />
           </Link>
-
+          <p className={styles.footerText}>
+            You are provided with crypto-asset services through the Looniebit platform by the relevant legal entity, determined based on your place of residence or habitual location, as disclosed in the <Link href="https://looniebit.com/legal-disclosure/">Legal Disclosure</Link> section of the <Link href="https://looniebit.com/">Looniebit.com</Link> website.
+          </p>
           <p>© {new Date().getFullYear()} All rights reserved</p>
         </div>
         <div className={styles.footerContentWrapper}>
@@ -70,7 +72,7 @@ export default function Footer() {
               <Link href="/disclaimer">Risks Disclosure</Link>
               <Link href="/aml-kyc-policy-2">AML policy</Link>
               <Link href="/complaints-procedure-2">Complaints Procedure</Link>
-              <Link href="-disclosure">Legal Disclosure</Link>
+              <Link href="/legal-disclosure/">Legal Disclosure</Link>
             </nav>
           </div>
           <div className={styles.footerContentWrapperItem}>
@@ -82,7 +84,7 @@ export default function Footer() {
               <Link href="/disclaimer">Risks Disclosure</Link>
               <Link href="/aml-kyc-policy-1">AML policy</Link>
               <Link href="/complaints-procedure-1">Complaints Procedure</Link>
-              <Link href="-disclosure">Legal Disclosure</Link>
+              <Link href="/legal-disclosure/">Legal Disclosure</Link>
             </nav>
           </div>
           <div className={styles.footerContentWrapperItem}>
@@ -107,9 +109,7 @@ export default function Footer() {
       </div>
       <div className={styles.footerBottom}>
         <div>
-          <p>
-            You are provided with crypto-asset services through the Looniebit platform by the relevant legal entity, determined based on your place of residence or habitual location, as disclosed in the Legal Disclosure section of the <Link href="https://looniebit.com/">Looniebit.com</Link> website.
-          </p>
+
         </div>
         <Image
           src="/images/visa.svg"

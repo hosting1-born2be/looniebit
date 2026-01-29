@@ -18,8 +18,8 @@ export default function ContactsDetails() {
           viewport={{ once: true }}
           variants={fadeInUp}
         > 
-          <h2>Our Registered Office</h2>
-          <p>You can also reach us by phone for quick inquiries:</p>
+          <h2>Reach Us by Phone</h2>
+          <p>Have an urgent issue or need immediate support? Call us at:</p>
           <div className={styles.address}>
             <Image
               src="/images/contacts/phone.svg"
