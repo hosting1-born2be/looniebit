@@ -92,7 +92,7 @@ export default function Footer() {
             <h3>Legal</h3>
             <nav>
               <Link href="/terms-conditions">Terms & Conditions</Link>
-              <Link href="/privacy-policy">Refund policy</Link>
+              <Link href="/privacy-policy">Privacy policy</Link>
               <Link href="/complaints-procedure">Complaints procedure</Link>
               <Link href="/aml-kyc-policy">AML policy</Link>
             </nav>
