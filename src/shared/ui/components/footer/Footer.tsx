@@ -63,7 +63,7 @@ export default function Footer() {
               <Link href="/contacts">Contacts</Link>
             </nav>
           </div>
-          <div className={styles.footerContentWrapperItem}>
+         {/*  <div className={styles.footerContentWrapperItem}>
             <h3>Clearcrest Inc. UAB</h3>
             <nav>
               <Link href="/terms-conditions-2">Terms & Conditions</Link>
@@ -86,7 +86,18 @@ export default function Footer() {
               <Link href="/complaints-procedure-1">Complaints Procedure</Link>
               <Link href="/legal-disclosure/">Legal Disclosure</Link>
             </nav>
+          </div> */}
+
+          <div className={styles.footerContentWrapperItem}>
+            <h3>Legal</h3>
+            <nav>
+              <Link href="/terms-conditions">Terms & Conditions</Link>
+              <Link href="/privacy-policy">Refund policy</Link>
+              <Link href="/complaints-procedure">Complaints procedure</Link>
+              <Link href="/aml-kyc-policy">AML policy</Link>
+            </nav>
           </div>
+
           <div className={styles.footerContentWrapperItem}>
             <h3>Reach Out to Us</h3>
             <div className={styles.address}>

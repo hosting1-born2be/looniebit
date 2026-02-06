@@ -91,10 +91,15 @@
         font-weight: 400;
         line-height: normal;
         margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
         b,
         strong {
           color: #fff;
         }
+
+        display: flex;
+        flex-direction: column;
       }
       h2 {
         color: #fff;
@@ -109,8 +114,8 @@
       }
       h3 {
         color: #fff;
-        margin: 48px 0 24px 0;
-        font-size: 18px;
+        margin: 48px 0 12px 0;
+        font-size: 24px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
