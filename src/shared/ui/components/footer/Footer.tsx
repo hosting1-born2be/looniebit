@@ -95,6 +95,10 @@ export default function Footer() {
               <Link href="/privacy-policy">Privacy policy</Link>
               <Link href="/complaints-procedure">Complaints procedure</Link>
               <Link href="/aml-kyc-policy">AML policy</Link>
+
+              <Link href="/refund-policy">Refund policy</Link>
+              <Link href="/risks-disclosure">Risks Disclosure</Link>
+              <Link href="/legal-disclosure">Legal Disclosure</Link>
             </nav>
           </div>
 
