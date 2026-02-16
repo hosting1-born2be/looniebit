@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import Image from "next/image";
+import { motion } from "framer-motion";
 
-import { fadeInUp } from '@/shared/lib/helpers/animations';
-import { cn } from '@/shared/lib/styles/utils';
+import { fadeInUp } from "@/shared/lib/helpers/animations";
+import { cn } from "@/shared/lib/styles/utils";
 
-import st from './DocumentSubmission.module.scss';
+import st from "./DocumentSubmission.module.scss";
 
 export function DocumentSubmission() {
   return (
@@ -50,8 +50,8 @@ export function DocumentSubmission() {
             <span className={st.tableList}>
               <p>Required Documents:</p>
               <ul>
-                <li>Identity Verification</li>
-                <li>Selfie with Liveness Test</li>
+                <li>Identity Document</li>
+                <li>Liveness Verification</li>
               </ul>
             </span>
           </div>
@@ -60,14 +60,14 @@ export function DocumentSubmission() {
           <h3 className={st.level}>Level 2</h3>
           <div className={st.tableValue}>
             <p className={st.tablePrice}>
-              For transactions between €5001 and €75000
+              For transactions between €5001 and €15000
             </p>
             <span className={st.tableList}>
               <p>Required Documents:</p>
               <ul>
                 <li>All documents from Level 1</li>
-                <li>SProof of Residence</li>
-                <li>Form 501 (Cryptocurrency Purchase Confirmation)</li>
+                <li>Proof of Address</li>
+                <li>CPA Form (Cryptocurrency Purchase Agreement)</li>
               </ul>
             </span>
           </div>
@@ -75,13 +75,25 @@ export function DocumentSubmission() {
         <section className={st.tableRow}>
           <h3 className={st.level}>Level 3</h3>
           <div className={st.tableValue}>
-            <p className={st.tablePrice}>For transactions above €75000</p>
+            <p className={st.tablePrice}>For transactions between €15001 and €75000</p>
             <span className={st.tableList}>
               <p>Required Documents:</p>
               <ul>
                 <li>All documents from Level 1 and Level 2</li>
-                <li>Form 502 (Request for Advanced Limits)</li>
+                <li>ALA Form (Advanced Limits Application)</li>
                 <li>Source of Funds Verification</li>
+              </ul>
+            </span>
+          </div>
+        </section>
+        <section className={st.tableRow}>
+          <h3 className={st.level}>Level 4</h3>
+          <div className={st.tableValue}>
+            <p className={st.tablePrice}>For transactions above €75001</p>
+            <span className={st.tableList}>
+              <p>Required Documents:</p>
+              <ul>
+                <li>All documents from Level 1, Level 2 and Level 3</li>
                 <li>Video Call Verification</li>
               </ul>
             </span>
