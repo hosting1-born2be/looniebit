@@ -24,7 +24,8 @@ export const Disclaimer = () => {
           />
         </svg>
         <p className={styles.disclaimerText}>
-          From 1 January 2026, Clearcrest Inc. UAB will no longer provide crypto-asset services within the European Union. Users located in the European Union may access Coinsdrom crypto-asset services only by registering directly with Monteris Sp. z o.o., a crypto-asset service provider established in the Republic of Poland, and by agreeing to its terms and conditions. For more details visit{' '}
+          Users located in the European Union may continue accessing Looniebit crypto-asset services by registering with Monteris Sp. z o.o., a crypto-asset service provider established in the Republic of Poland, and by accepting its terms and conditions. 
+          From 1 January 2026, Clearcrest Inc. UAB will no longer provide crypto-asset services within the EU. For more details, please visit the {' '}
           <Link href="https://looniebit.com/legal-disclosure">Legal Disclosure</Link> page.
         </p>
       </div>
