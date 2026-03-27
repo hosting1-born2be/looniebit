@@ -30,7 +30,7 @@ export default function Header() {
 
   return (
     <>
-      <Notice />
+      {/* <Notice /> */}
       <Disclaimer />
       <header className={styles.header}>
         <div className={styles.headerTop}>
