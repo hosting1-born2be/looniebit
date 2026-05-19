@@ -22,16 +22,6 @@ export default function HomeWhy() {
             >
               Why Choose LoonieBit?
             </motion.h2>
-            <motion.p
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-            >
-              Struggling to gain traction, increase conversions, or optimize
-              marketing spending? Our experts build holistic, ROI-driven
-              strategies designed for long-term success.
-            </motion.p>
           </div>
           <div className={styles.homeWhyContentRow}>
             <div>
