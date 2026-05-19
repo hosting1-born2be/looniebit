@@ -23,6 +23,14 @@ export default function HomeSecond() {
             >
               Start Exchanging in 3 Simple Steps
             </motion.h2>
+            <motion.p
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={fadeInUp}
+            >
+              Struggling to gain traction, increase conversions, or optimize marketing spending? Our experts build holistic, ROI-driven strategies designed for long-term success.
+            </motion.p>
           </div>
           <Image
             src="/images/home/homeSecond.png"
