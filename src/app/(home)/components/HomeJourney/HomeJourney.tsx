@@ -23,16 +23,6 @@ export default function HomeJourney() {
             >
               Your Journey with LoonieBit Starts Here
             </motion.h2>
-            <motion.p
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-              variants={fadeInUp}
-            >
-              Marketifire creates scalable marketing solutions that help
-              businesses generate leads, nurture customers, and drive higher
-              lifetime value.
-            </motion.p>
           </div>
           <div className={styles.homeJourneyContentRow}>
             <div>
