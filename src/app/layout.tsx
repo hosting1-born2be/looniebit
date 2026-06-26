@@ -13,7 +13,7 @@ import '@/shared/lib/styles/mixin.scss';
 // The site is temporarily closed. While this flag is true, every route renders
 // only the maintenance placeholder; all pages remain in the codebase but hidden.
 // Set to false to restore the regular site (Header / page content / Footer).
-const MAINTENANCE_MODE = false;
+const MAINTENANCE_MODE = true;
 
 const roboto = Roboto({
   variable: '--font-roboto',
